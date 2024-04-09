@@ -10,7 +10,7 @@ export function slidesHandler() {
     {
       name: "Hevor travels",
       title: "Hevor Travels - website de viagens",
-      thumbnail: "../assets/hevor.png",
+      thumbnail: "assets/hevor.png",
       description: "Site de uma agencia de viagens feito baseado em um template wordpress, site possui design responsivo e foi elaborado para a melhor experiencia possível do usuário",
       link: "https://henrique307.github.io/travels-website",
       github: "https://github.com/henrique307/travels-website",
@@ -23,7 +23,7 @@ export function slidesHandler() {
     {
       name: "muay-thai",
       title: "Site para academia",
-      thumbnail: "../assets/fight.png",
+      thumbnail: "assets/fight.png",
       description: "Site elaborado para uma academia de Muay Thai, com design moderno e responsivo visando informar o cliente sobre os maiores beneficios e sobre a cultura do esporte!",
       link: "https://henrique307.github.io/santa-cruz-fight-club",
       github: "https://github.com/henrique307/santa-cruz-fight-club",
@@ -36,7 +36,7 @@ export function slidesHandler() {
     {
       name: "confeitaria",
       title: "Site para confeitaria",
-      thumbnail: "../assets/cakes.png",
+      thumbnail: "assets/cakes.png",
       description: "E-comerce de uma confeitaria, website fala sobre a cultura da empresa, um pouco sobre os chefs e mostra seus produtos de forma organizada e concisa.",
       link: "https://henrique307.github.io/cakes-website",
       github: "https://github.com/henrique307/cakes-website",
@@ -48,7 +48,7 @@ export function slidesHandler() {
     {
       name: "API sheets",
       title: "API integrada ao google sheets",
-      thumbnail: "../assets/api.png",
+      thumbnail: "assets/api.png",
       description: "API integrada com o google sheets, que executa todas as operações CRUD necessárias para fazer integração com uma aplicação de sua escolha! ",
       link: "https://portfolioapi-production.up.railway.app/api/swagger",
       github: "https://github.com/henrique307/api-sheets",
