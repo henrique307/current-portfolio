@@ -11,7 +11,7 @@ export function slidesHandler() {
       name: "Hevor travels",
       title: "Hevor Travels - website de viagens",
       thumbnail: "assets/hevor.png",
-      description: "Site de uma agencia de viagens feito baseado em um template wordpress, site possui design responsivo e foi elaborado para a melhor experiencia possível do usuário",
+      description: "Site para agencia de viagens, site possui design responsivo e foi elaborado visando a melhor experiencia possível do usuário",
       link: "https://henrique307.github.io/travels-website",
       github: "https://github.com/henrique307/travels-website",
       icons: [
@@ -21,27 +21,27 @@ export function slidesHandler() {
       ]
     },
     {
+      name: "confeitaria",
+      title: "🚧Site para confeitaria🚧",
+      thumbnail: "assets/bakery.png",
+      description: "E-comerce para confeitaria, website tem o objetivo de apresentar ao cliente com beleza e concisão seus produtos e preços. (em desenvolvimento)",
+      link: "https://henrique307.github.io/bakery-website",
+      github: "https://github.com/henrique307/bakery-website",
+      icons: [
+        '<i class="devicon-react-original-wordmark"></i>',
+        '<i class="devicon-sass-original"></i>',
+      ]
+    },
+    {
       name: "muay-thai",
       title: "Site para academia",
       thumbnail: "assets/fight.png",
-      description: "Site elaborado para uma academia de Muay Thai, com design moderno e responsivo visando informar o cliente sobre os maiores beneficios e sobre a cultura do esporte!",
+      description: "Site para uma academia de Muay Thai, com design moderno e responsivo visando informar o cliente sobre os maiores beneficios e sobre a cultura do esporte!",
       link: "https://henrique307.github.io/santa-cruz-fight-club",
       github: "https://github.com/henrique307/santa-cruz-fight-club",
       icons: [
         '<i class="devicon-javascript-plain"></i>',
         '<i class="devicon-html5-plain-wordmark"></i>',
-        '<i class="devicon-css3-plain-wordmark"></i>'
-      ]
-    },
-    {
-      name: "confeitaria",
-      title: "Site para confeitaria",
-      thumbnail: "assets/cakes.png",
-      description: "E-comerce de uma confeitaria, website fala sobre a cultura da empresa, um pouco sobre os chefs e mostra seus produtos de forma organizada e concisa.",
-      link: "https://henrique307.github.io/cakes-website",
-      github: "https://github.com/henrique307/cakes-website",
-      icons: [
-        '<i class="devicon-react-original-wordmark"></i>',
         '<i class="devicon-css3-plain-wordmark"></i>'
       ]
     },

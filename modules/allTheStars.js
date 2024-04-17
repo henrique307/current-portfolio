@@ -6,7 +6,7 @@ export function starsHandler() {
     var currentY = '';
     var header = document.querySelector("header .parallax");
     var H1title = document.querySelector("h1")
-    var movementConstant = .002;
+    var movementConstant = .003;
 
     allTheStars(header, 150)
 
