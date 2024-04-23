@@ -22,14 +22,16 @@ export function slidesHandler() {
     },
     {
       name: "confeitaria",
-      title: "🚧Site para confeitaria🚧",
+      title: "Site para confeitaria",
       thumbnail: "assets/bakery.png",
-      description: "E-comerce para confeitaria, website tem o objetivo de apresentar ao cliente com beleza e concisão seus produtos e preços. (em desenvolvimento)",
+      description: "E-comerce integrado com a API de pagamentos do Stripe, website tem o objetivo de apresentar ao cliente com beleza e concisão seus produtos e preços",
       link: "https://henrique307.github.io/bakery-website",
       github: "https://github.com/henrique307/bakery-website",
       icons: [
         '<i class="devicon-react-original-wordmark"></i>',
-        '<i class="devicon-sass-original"></i>',
+        '<i class="devicon-redux-original"></i>',
+        '<i class="devicon-tailwindcss-original"></i>',
+        '<i class="stripe"> stripe </i>'
       ]
     },
     {

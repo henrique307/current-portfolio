@@ -432,6 +432,11 @@ main {
             background: linear-gradient(to top, #ef32d9, #89fffd);
             background-clip: text;
             color: transparent;
+            user-select: none;
+
+            &.stripe {
+              font-size: 20px;
+            }
           }
         }
 

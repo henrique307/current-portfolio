@@ -388,6 +388,10 @@ main section.projetos section.projetos-container .card div.icons i {
   background: linear-gradient(to top, #ef32d9, #89fffd);
   background-clip: text;
   color: transparent;
+  user-select: none;
+}
+main section.projetos section.projetos-container .card div.icons i.stripe {
+  font-size: 20px;
 }
 main section.projetos section.projetos-container .card div.card-links {
   display: flex;
