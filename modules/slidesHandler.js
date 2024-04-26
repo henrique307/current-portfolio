@@ -33,8 +33,8 @@ export function projectsSlideHandler() {
       title: "REST API para Petshop",
       thumbnail: "assets/petshop_api.png",
       description: "API REST construida com NestJS (Framework que facilita a criação de API's Express de forma rápida e organizada) com atenticação JWT usando MongoDB como base de dados",
-      link: "https://portfolioapi-production.up.railway.app/api/swagger",
-      github: "https://github.com/henrique307/api-sheets",
+      link: "https://petshop-api-9fdk.onrender.com/api/swagger",
+      github: "https://github.com/henrique307/petshop-api",
       icons: [
         '<i class="devicon-nestjs-original" alt="NestJS" title="NestJS"></i>',
         '<i class="devicon-mongodb-plain-wordmark" alt="MongoDB" title="MongoDB"></i>',
