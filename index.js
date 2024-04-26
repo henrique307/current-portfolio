@@ -1,7 +1,7 @@
 import { action } from "./modules/action.js";
 import { starsHandler } from "./modules/allTheStars.js";
 import { circlesHandler } from "./modules/circles.js"
-import { slidesHandler } from "./modules/slidesHandler.js";
+import { projectsSlideHandler, skillsSlideHandler } from "./modules/slidesHandler.js";
 
 //STARS
   
@@ -13,7 +13,8 @@ circlesHandler(5);
 
 // SLIDES
 
-slidesHandler();
+projectsSlideHandler();
+skillsSlideHandler();
 
 // Action
 
