@@ -8,7 +8,7 @@ export function starsHandler() {
     var H1title = document.querySelector("h1")
     var movementConstant = .003;
 
-    allTheStars(header, 150)
+    allTheStars(header, 100)
 
     var layers = document.querySelectorAll(".parallax div.star-layer");
     H1title.setAttribute("style", `z-index: ${layers.length + 1}`)
@@ -36,11 +36,13 @@ export function starsHandler() {
 
     $('.parallax div.star-layer').each(function (i, el) {
         window.addEventListener("devicemotion", (e) => {
-            const limiteMovimento = 4
+            const limiteMovimento = 2
+            const movimentoMinimo = 5
 
             if (
-                !(-5 < e.rotationRate.beta && e.rotationRate.beta < 5) &&
-                !(-5 < e.rotationRate.alpha && e.rotationRate.alpha < 5)
+                !(-movimentoMinimo < e.rotationRate.beta && e.rotationRate.beta < movimentoMinimo) &&
+                !(-movimentoMinimo < e.rotationRate.alpha && e.rotationRate.alpha < movimentoMinimo
+                )
             ) {
 
                 $(el).css({
@@ -51,9 +53,9 @@ export function starsHandler() {
     })
 }
 
-export function allTheStars(Element, number = 100) {
-    const randomNumber = generateRandomNumber(0, 100) + number
-    const layers = Math.floor(randomNumber / 10)
+export function allTheStars(Element, number) {
+    const starsNumber = number
+    const layers = Math.floor(starsNumber / 10)
     const getStarStyles = () => {
         const tamanho = `${generateRandomNumber(1, 3)}px`
         return `
@@ -78,7 +80,7 @@ export function allTheStars(Element, number = 100) {
     new Array(layers).fill(null).map((_, i) => {
         elements.push(`
             <div class="star-layer" style="${getLayerStyles(i)}">
-                ${new Array(Math.floor(randomNumber / layers)).fill(null).map(start => {
+                ${new Array(Math.floor(starsNumber / layers)).fill(null).map(start => {
             return `<div class="star" style="${getStarStyles()}"></div>`
         })}
             </div>
