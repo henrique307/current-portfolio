@@ -47,7 +47,7 @@ export function projectsSlideHandler() {
       title: "API integrada ao google sheets",
       thumbnail: "assets/api.png",
       description: "API integrada com o google sheets, que executa todas as operações CRUD necessárias para fazer integração com uma aplicação de sua escolha! ",
-      link: "https://portfolioapi-production.up.railway.app/api/swagger",
+      link: "https://api-sheets.onrender.com/api/swagger",
       github: "https://github.com/henrique307/api-sheets",
       icons: [
         '<i class="devicon-google-plain" alt="Google APIs" title="Google APIs"></i>',

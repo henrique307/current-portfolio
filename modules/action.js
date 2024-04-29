@@ -29,7 +29,7 @@ export function action() {
 
         e.preventDefault()
 
-        fetch("https://portfolioapi-production.up.railway.app/telegram", {
+        fetch("https://api-sheets.onrender.com/telegram", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
