@@ -1,11 +1,10 @@
 import "./trabalhos.css";
 import { TechIconInterface, icons } from "../../../utils/icons/texh-icons";
 import { NewWindowIcon } from "../../../utils/icons/icons";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 // import { envConfig } from "../../../config";
 
 export function Trabalhos() {
-
   interface Trabalho {
     titulo: string;
     descricao: string;
@@ -83,7 +82,10 @@ export function Trabalhos() {
   ];
 
   return (
-    <section id="trabalhos" className="py-32 bg-base-100 w-full flex justify-center">
+    <section
+      id="trabalhos"
+      className="py-32 bg-base-100 w-full flex justify-center"
+    >
       <div className="text-left flex flex-col items-center mx-auto w-[90%]">
         <div className="flex justify-between w-[90%] items-end">
           <div className="text-center sm:text-left mx-auto sm:m-0">
@@ -112,11 +114,13 @@ export function Trabalhos() {
                       <icons.IconGithub className="text-5xl" />
                     </a>
                     <div className="absolute w-full z-10 h-full backdrop-grayscale-[.45]"></div>
-                    <img
-                      className="ver-repo object-cover w-full h-full object-center"
-                      src={trabalho.thumbnail}
-                      alt={trabalho.titulo}
-                    />
+                    <Suspense fallback={<div className="skeleton w-full h-full"></div>}>
+                      <img
+                        className="ver-repo object-cover w-full h-full object-center"
+                        src={trabalho.thumbnail}
+                        alt={trabalho.titulo}
+                      />
+                    </Suspense>
                   </div>
                   <div className="bottom-0 w-full p-3 pt-0">
                     <h1 className="md:text-lg  cursor-default mt-5">

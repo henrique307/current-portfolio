@@ -25,6 +25,23 @@ export function FooterComponent() {
       ],
     },
     {
+      titulo: "Serviços",
+      links: [
+        {
+          nome: "Workana",
+          link: "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e",
+        },
+        {
+          nome: "99Freelas",
+          link: "https://www.99freelas.com.br/user/henriqueflorencio",
+        },
+        {
+          nome: "UpWork",
+          link: "https://www.upwork.com/freelancers/~01e80cd531d09b6b79",
+        },
+      ],
+    },
+    {
       titulo: "Mapa",
       links: [
         {
