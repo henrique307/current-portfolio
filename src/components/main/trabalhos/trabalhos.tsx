@@ -1,6 +1,7 @@
 import "./trabalhos.css";
 import { TechIconInterface, icons } from "../../../utils/icons/texh-icons";
 import { NewWindowIcon } from "../../../utils/icons/icons";
+import { LazyLoadImage } from "react-lazy-load-image-component"
 import { Suspense, useState } from "react";
 // import { envConfig } from "../../../config";
 
@@ -114,13 +115,15 @@ export function Trabalhos() {
                       <icons.IconGithub className="text-5xl" />
                     </a>
                     <div className="absolute w-full z-10 h-full backdrop-grayscale-[.45]"></div>
-                    <Suspense fallback={<div className="skeleton w-full h-full"></div>}>
-                      <img
-                        className="ver-repo object-cover w-full h-full object-center"
-                        src={trabalho.thumbnail}
-                        alt={trabalho.titulo}
-                      />
-                    </Suspense>
+                    <LazyLoadImage
+                      src={trabalho.thumbnail}
+                      placeholder={<div className="skeleton"></div>}
+                      width={"100%"}
+                      height={"100%"}
+                      alt={trabalho.titulo}
+                      loading="lazy"
+                      
+                    />
                   </div>
                   <div className="bottom-0 w-full p-3 pt-0">
                     <h1 className="md:text-lg  cursor-default mt-5">

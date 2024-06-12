@@ -21,7 +21,7 @@ export function Intro() {
           <h1 className="text-xs md:text-lg lg:text-xl font-bold text-primary">
             Olá meu nome é Henrique! Sou{" "}
           </h1>
-          <div className="font-mono flex sm:flex-row w-fit text-lg md:text-4xl lg:text-5xl text-nowrap font-bold">
+          <div className="bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent font-mono flex sm:flex-row w-fit text-lg md:text-4xl lg:text-5xl text-nowrap font-bold">
             Desenvolvedor{" "}
             <ReactTyped 
               strings={atividades}

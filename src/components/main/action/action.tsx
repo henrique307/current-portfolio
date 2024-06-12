@@ -75,7 +75,7 @@ export function CallToAction() {
       <div className="hero-overlay"></div>
       {form ? (
         <div className="hero">
-          <div className="hero-content flex-col">
+          <div className="hero-content pt-10 flex-col">
             {errorMessage === undefined ? "" :
             !errorMessage ? (
               <div className="bg-error max-w-2xl text-center text-red-900  rounded-md  px-6 py-3">
@@ -93,7 +93,7 @@ export function CallToAction() {
                 <p className="text-xl text-center">Obrigado pelo contato!</p>
               </div>
             )}
-            <div className="card p-5 shrink-0 w-full max-w-sm shadow-2xl">
+            <div className="card bg-base-200 p-5 pt-0 shrink-0 w-full max-w-sm shadow-2xl">
               <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-control">
                   <label className="label">
@@ -107,7 +107,7 @@ export function CallToAction() {
                     {...register("nome")}
                     type="text"
                     placeholder="nome"
-                    className="input input-bordered bg-transparent rounded-none"
+                    className="input input-bordered rounded-none"
                   />
                 </div>
                 <div className="form-control">
@@ -122,7 +122,7 @@ export function CallToAction() {
                     {...register("email")}
                     type="email"
                     placeholder="email"
-                    className="input input-bordered bg-transparent rounded-none"
+                    className="input input-bordered rounded-none"
                   />
                 </div>
                 <div className="form-control">
@@ -140,7 +140,7 @@ export function CallToAction() {
                   <textarea
                     {...register("mensagem")}
                     placeholder="Mensagem"
-                    className="py-2 max-h-40 input input-bordered bg-transparent rounded-none"
+                    className="py-2 max-h-40 input input-bordered rounded-none"
                   />
                 </div>
                 <div className="form-control mt-6">
@@ -148,7 +148,7 @@ export function CallToAction() {
                 </div>
               </form>
             </div>
-            <div onClick={toggle} className="link link-hover">
+            <div onClick={toggle} className="text-primary link link-hover">
               Voltar
             </div>
           </div>
@@ -161,7 +161,7 @@ export function CallToAction() {
             <h1 className="mb-5 text-xl md:text-3xl lg:text-4xl font-bold tracking-wider">
               🌍 Vamos dominar o mundo! 🚀
             </h1>
-            <p className="mb-5 my-8 opacity-75 text-xs md:text-xl px-2 lg:text-2xl leading-relaxed">
+            <p className="mb-5 my-8 opacity-75 text-sm md:text-xl px-2 lg:text-2xl leading-relaxed">
               Comece agora a desenvolver a solução que você precisa para o seu
               negócio atingir um novo patamar!
             </p>

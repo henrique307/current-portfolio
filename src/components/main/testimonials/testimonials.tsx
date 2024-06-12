@@ -52,7 +52,7 @@ export function Testimonials() {
             return (
               <SplideSlide key={i}>
                 <div className="py-12 w-full mx-auto max-w-[50rem]">
-                  <span className="text-sm md:text-lg block text-base-content opacity-50 mb-16 text-center">
+                  <span className="text-sm md:text-lg block text-base-content opacity-75 mb-16 text-center">
                     {testemunho.descricao}
                   </span>
                   <div className="flex gap-3 items-center justify-center">
@@ -74,7 +74,7 @@ export function Testimonials() {
               </SplideSlide>
             );
           })}
-          <div className="splide__arrows text-transparent text-xs font-bold">
+          <div className="splide__arrows hidden sm:block text-transparent text-xs font-bold">
             <button className="splide__arrow splide__arrow--prev translate-x-[-22px]">
               <NextArrow className="fill-transparent" />
             </button>
