@@ -32,7 +32,7 @@ export function Intro() {
               loop
               loopCount={3}
             >
-              <p className="ml-3 w-fit border-r typing"></p>
+              <p className="ml-3 w-fit border-r border-base-content typing"></p>
             </ReactTyped>
           </div>
           <p className="text-sm md:text-lg lg:text-xl opacity-75 pb-4 pt-2 max-w-lg lg:max-w-3xl">
