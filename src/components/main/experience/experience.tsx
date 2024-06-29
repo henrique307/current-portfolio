@@ -57,7 +57,7 @@ export function Experiencia() {
                 className="px-8 text-center w-[80%] sm:w-96 md:w-86 py-10 bg-base-100 inline gap-3 border-b-secondary border-b-2"
                 key={`exp-${i}`}
               >
-                {servicos[i]("size-14 mb-3 mx-auto")}
+                {servicos[i]("size-12 mb-3 mx-auto")}
                 <h1 className="text-2xl font-bold bg-gradient-to-t from-primary to-indigo-500 text-transparent bg-clip-text">
                   {servico.header}
                 </h1>
