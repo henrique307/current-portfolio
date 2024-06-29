@@ -1,72 +1,24 @@
+import { useTranslation } from "react-i18next";
 import { Logo } from "../../utils/logo";
 
 export function FooterComponent() {
-  interface Coluna {
-    titulo: string;
-    links: { nome: string; link: string }[];
+
+  interface FooterTranslation {
+    henridev: {
+      title: string;
+      rights: string;
+    };
+    columns: {
+      title: string;
+      links: { nome: string; link: string }[];
+    }[];
   }
 
-  const colunas: Coluna[] = [
-    {
-      titulo: "Me encontre no",
-      links: [
-        {
-          nome: "Workana",
-          link: "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e",
-        },
-        {
-          nome: "99Freelas",
-          link: "https://www.99freelas.com.br/user/henriqueflorencio",
-        },
-        {
-          nome: "UpWork",
-          link: "https://www.upwork.com/freelancers/~01e80cd531d09b6b79",
-        },
-      ],
-    },
-    {
-      titulo: "Serviços",
-      links: [
-        {
-          nome: "Workana",
-          link: "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e",
-        },
-        {
-          nome: "99Freelas",
-          link: "https://www.99freelas.com.br/user/henriqueflorencio",
-        },
-        {
-          nome: "UpWork",
-          link: "https://www.upwork.com/freelancers/~01e80cd531d09b6b79",
-        },
-      ],
-    },
-    {
-      titulo: "Mapa",
-      links: [
-        {
-          nome: "Quem sou eu",
-          link: "#eu",
-        },
-        {
-          nome: "Serviços",
-          link: "#servicos",
-        },
-        {
-          nome: "Trabalhos",
-          link: "#trabalhos",
-        },
-        {
-          nome: "Testemunhos",
-          link: "#testemunhos",
-        },
-        {
-          nome: "Trabalhe comigo",
-          link: "#action",
-        },
-      ],
-    },
-  ];
+  const { t } = useTranslation("global");
+  const footerTranslation = t("footer", {
+    returnObjects: true,
+  }) as FooterTranslation;
+
   return (
     <section>
       <footer className="flex flex-col">
@@ -74,16 +26,19 @@ export function FooterComponent() {
           <div className="flex flex-col h-full justify-between w-full">
             <aside className="flex flex-col gap-1">
               <Logo className="text-lg sm:text-xl" />
-              <p className="text-xs sm:text-sm">Desenvolvedor de software</p>
+              <p className="text-xs sm:text-sm">{footerTranslation.henridev.title}</p>
               <p className="text-xs sm:text-sm">
                 henrique.florencio307@gmail.com
               </p>
               <p className="text-xs sm:text-sm">
-                Copyright © 2024 - All rights reserved
+                Copyright © 2024 - {footerTranslation.henridev.rights}
               </p>
             </aside>
             <nav className="flex gap-4 pt-3">
-              <a href="https://www.linkedin.com/in/henrique-florencio-dev"  target="_blank">
+              <a
+                href="https://www.linkedin.com/in/henrique-florencio-dev"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -94,7 +49,7 @@ export function FooterComponent() {
                   <path d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.895,-2 -2,-2zM10.954,22h-2.95v-9.492h2.95zM9.449,11.151c-0.951,0 -1.72,-0.771 -1.72,-1.72c0,-0.949 0.77,-1.719 1.72,-1.719c0.948,0 1.719,0.771 1.719,1.719c0,0.949 -0.771,1.72 -1.719,1.72zM22.004,22h-2.948v-4.616c0,-1.101 -0.02,-2.517 -1.533,-2.517c-1.535,0 -1.771,1.199 -1.771,2.437v4.696h-2.948v-9.492h2.83v1.297h0.04c0.394,-0.746 1.356,-1.533 2.791,-1.533c2.987,0 3.539,1.966 3.539,4.522z"></path>
                 </svg>
               </a>
-              <a href="https://wa.me/5521990868835"  target="_blank">
+              <a href="https://wa.me/5521990868835" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -107,13 +62,18 @@ export function FooterComponent() {
               </a>
             </nav>
           </div>
-          {colunas.map((coluna, i) => {
+          {footerTranslation.columns.map((coluna, i) => {
             return (
               <nav key={i}>
-                <h6 className="footer-title">{coluna.titulo}</h6>
+                <h6 className="footer-title">{coluna.title}</h6>
                 {coluna.links.map((link, i) => {
                   return (
-                    <a href={link.link} target={coluna.titulo !== "Mapa" ? "_blank" : "_self"} key={i} className="link link-hover">
+                    <a
+                      href={link.link}
+                      target={coluna.title !== "Mapa" ? "_blank" : "_self"}
+                      key={i}
+                      className="link link-hover"
+                    >
                       {link.nome}
                     </a>
                   );

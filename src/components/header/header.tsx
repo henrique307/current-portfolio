@@ -1,39 +1,22 @@
 import "./header.css";
 import { Logo } from "../../utils/logo";
 import { Settings, Themes } from "../../utils/icons/icons";
-import { useState } from "react";
-import { suportedLanguages } from "./utils/suportedLanguages";
+import { useTranslation } from "react-i18next";
 
 export function HeaderComponent() {
-  const [language, setLanguage] = useState(suportedLanguages[0]);
-
   interface NavItem {
     nome: string;
     link: string;
   }
 
-  const navItems: NavItem[] = [
-    {
-      nome: "Quem sou eu",
-      link: "#eu",
-    },
-    {
-      nome: "Serviços",
-      link: "#servicos",
-    },
-    {
-      nome: "Trabalhos",
-      link: "#trabalhos",
-    },
-    {
-      nome: "Testemunhos",
-      link: "#testemunhos",
-    },
-    {
-      nome: "Trabalhe comigo",
-      link: "#action",
-    },
-  ];
+  const { t, i18n } = useTranslation("global");
+  const navItems = t("header.sections", { returnObjects: true }) as NavItem[];
+  const langs = ["ES", "EN", "PT"];
+
+  function handleLanguageChange(lang: string) {
+    i18n.changeLanguage(lang);
+  }
+
   return (
     <section className="z-20 drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -70,14 +53,20 @@ export function HeaderComponent() {
                 {navItems.map((item, i) => {
                   return (
                     <li key={i}>
-                      <a href={item.link}>{item.nome}</a>
+                      <a className="font-medium opacity-75" href={item.link}>
+                        {item.nome}
+                      </a>
                     </li>
                   );
                 })}
               </ul>
             </div>
-            <div className="dropdown dropdown-bottom">
-              <div tabIndex={0} role="button" className="btn m-1 bg-base-300">
+            <div className="dropdown dropdown-hover">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn m-1 bg-base-300 border-transparent"
+              >
                 <Settings className="bg-base-300" />
               </div>
               <ul
@@ -85,23 +74,19 @@ export function HeaderComponent() {
                 className="dropdown-content gap-2 menu bg-base-100 rounded-box z-[1] w-fit p-2 shadow"
               >
                 <Themes className="w-1/2 mx-auto aspect-square" />
-                <div className="dropdown dropdown-left w-2/3">
-                  <div  className="btn hover:none px-0 bg-transparent border-transparent m-0 text-center text-lg cursor-pointer font-bold aspect-square">
-                    {language}
-                  </div>
-                  <ul
-                    tabIndex={1}
-                    className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
-                  >
-                    {suportedLanguages.map((lang) => {
+                <details>
+                  <ul>
+                    {langs.map((lang, i) => {
+                      if(lang === i18n.language) return;
                       return (
-                        <li>
-                          <a>{lang}</a>
+                        <li key={i}>
+                          <a onClick={() => handleLanguageChange(lang)} className="uppercase">{lang}</a>
                         </li>
                       );
                     })}
                   </ul>
-                </div>
+                  <summary className="uppercase btn px-0 bg-transparent border-transparent m-0 text-center text-lg cursor-pointer font-bold aspect-square">{i18n.language}</summary>
+                </details>
               </ul>
             </div>
           </div>
@@ -120,7 +105,9 @@ export function HeaderComponent() {
           {navItems.map((item, i) => {
             return (
               <li key={i}>
-                <a href={item.link}>{item.nome}</a>
+                <a className="font-medium opacity-75" href={item.link}>
+                  {item.nome}
+                </a>
               </li>
             );
           })}

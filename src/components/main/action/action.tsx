@@ -3,10 +3,18 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import "./action.css";
+import { useTranslation } from "react-i18next";
 
 export function CallToAction() {
   const [form, setForm] = useState(false);
-  const [errorMessage, setErrorMessage] = useState<boolean | undefined>(undefined);
+  const [errorMessage, setErrorMessage] = useState<boolean | undefined>(
+    undefined
+  );
+
+  const { t } = useTranslation("global");
+  const actionTranslation = t("main.action", {
+    returnObjects: true,
+  }) as ActionTranslation;
 
   async function toggle() {
     setForm(!form);
@@ -18,16 +26,65 @@ export function CallToAction() {
     mensagem: string;
   }
 
+  interface ActionTranslation {
+    header: string;
+    main: string;
+    action: string;
+    form: {
+      failure: {
+        sending_error: {
+          header: string;
+          main: string;
+        };
+        input_error: {
+          name: {
+            required: string;
+          };
+          email: {
+            required: string;
+            invalid: string;
+          };
+          message: {
+            required: string;
+            max_lenght: string;
+          };
+        };
+      };
+      success: {
+        header: string;
+        main: string;
+      };
+      inputs: {
+        name: {
+          placeholder: string;
+          label: string;
+        };
+        email: {
+          placeholder: string;
+          label: string;
+        };
+        message: {
+          placeholder: string;
+          label: string;
+        };
+      };
+      comands: {
+        send: string;
+        back: string;
+      }
+    };
+  }
+
   const zodSchema = z.object({
-    nome: z.string().min(1, { message: "Este campo é obrigatório" }),
+    nome: z.string().min(1, { message: actionTranslation.form.failure.input_error.name.required }),
     email: z
       .string()
-      .min(1, { message: "Este campo é obrigatório" })
-      .email({ message: "Email inválido" }),
+      .min(1, { message: actionTranslation.form.failure.input_error.email.required })
+      .email({ message: actionTranslation.form.failure.input_error.email.invalid }),
     mensagem: z
       .string()
-      .min(1, { message: "Por favor escreva uma mensagem" })
-      .max(1500, { message: "Mucho testo 👀" }),
+      .min(1, { message: actionTranslation.form.failure.input_error.message.required })
+      .max(1500, { message: actionTranslation.form.failure.input_error.message.max_lenght }),
   });
 
   const {
@@ -62,7 +119,7 @@ export function CallToAction() {
   async function onSubmit(data: MessageInterface) {
     const response = await sendMessage(data);
 
-    console.log(response)
+    console.log(response);
 
     setErrorMessage(response);
   }
@@ -76,37 +133,37 @@ export function CallToAction() {
       {form ? (
         <div className="hero">
           <div className="hero-content pt-10 flex-col">
-            {errorMessage === undefined ? "" :
-            !errorMessage ? (
-              <div className="bg-error max-w-2xl text-center text-red-900  rounded-md  px-6 py-3">
+            {errorMessage === undefined ? (
+              ""
+            ) : !errorMessage ? (
+              <div className="bg-error max-w-2xl text-center text-red-900 rounded-md  px-6 py-3">
                 <h1 className="text-3xl text-red-900 px-6 py-3 bold">
-                  Houve um erro enviando sua mensagem
+                {actionTranslation.form.failure.sending_error.header}
                 </h1>
                 <p className="text-xl">
-                  Por favor tente novamente ou entre em contato comigo pelas
-                  minhas rede sociais no fundo da página!
+                {actionTranslation.form.failure.sending_error.main}
                 </p>
               </div>
             ) : (
               <div className="max-w-2xl bg-success text-center text-green-900 rounded-md  px-6 py-3">
-                <h1 className="text-3xl bold">Mensagem enviada com sucesso!</h1>
-                <p className="text-xl text-center">Obrigado pelo contato!</p>
+                <h1 className="text-3xl bold">{actionTranslation.form.success.header}</h1>
+                <p className="text-xl text-center">{actionTranslation.form.success.main}</p>
               </div>
             )}
-            <div className="card bg-base-200 p-5 pt-0 shrink-0 w-full max-w-sm shadow-2xl">
+            <div className="card bg-base-200 p-5 pt-0 shrink-0 w-full max-w-md shadow-2xl">
               <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-control">
                   <label className="label">
                     <span
                       className={`label-text ${errors.nome && "text-error"}`}
                     >
-                      {errors.nome ? errors.nome?.message : "Seu nome"}
+                      {errors.nome ? errors.nome?.message : actionTranslation.form.inputs.name.label}
                     </span>
                   </label>
                   <input
                     {...register("nome")}
                     type="text"
-                    placeholder="nome"
+                    placeholder={actionTranslation.form.inputs.name.placeholder}
                     className="input input-bordered rounded-none"
                   />
                 </div>
@@ -115,13 +172,13 @@ export function CallToAction() {
                     <span
                       className={`label-text ${errors.email && "text-error"}`}
                     >
-                      {errors.email ? errors.email?.message : "Seu Email"}
+                      {errors.email ? errors.email?.message : actionTranslation.form.inputs.email.label}
                     </span>
                   </label>
                   <input
                     {...register("email")}
                     type="email"
-                    placeholder="email"
+                    placeholder={actionTranslation.form.inputs.email.placeholder}
                     className="input input-bordered rounded-none"
                   />
                 </div>
@@ -134,22 +191,22 @@ export function CallToAction() {
                     >
                       {errors.mensagem
                         ? errors.mensagem?.message
-                        : "Sua mensagem"}
+                        : actionTranslation.form.inputs.message.label}
                     </span>
                   </label>
                   <textarea
                     {...register("mensagem")}
-                    placeholder="Mensagem"
-                    className="py-2 max-h-40 input input-bordered rounded-none"
+                    placeholder={actionTranslation.form.inputs.message.placeholder}
+                    className="py-2 h-32 input input-bordered rounded-none"
                   />
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary rounded-none">Send</button>
+                  <button className="btn btn-primary rounded-none">{actionTranslation.form.comands.send}</button>
                 </div>
               </form>
             </div>
             <div onClick={toggle} className="text-primary link link-hover">
-              Voltar
+              {actionTranslation.form.comands.back}
             </div>
           </div>
         </div>
@@ -159,17 +216,16 @@ export function CallToAction() {
         >
           <div className="max-w-3xl py-10">
             <h1 className="mb-5 text-xl md:text-3xl lg:text-4xl font-bold tracking-wider">
-              🌍 Vamos dominar o mundo! 🚀
+              {actionTranslation.header}
             </h1>
             <p className="mb-5 my-8 opacity-75 text-sm md:text-xl px-2 lg:text-2xl leading-relaxed">
-              Comece agora a desenvolver a solução que você precisa para o seu
-              negócio atingir um novo patamar!
+              {actionTranslation.main}
             </p>
             <button
               onClick={toggle}
               className="btn btn-primary btn-sm md:btn-md mt-3 px-8 btn-outline rounded-none"
             >
-              Fale comigo!
+              {actionTranslation.action}
             </button>
           </div>
         </div>
