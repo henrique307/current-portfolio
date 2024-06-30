@@ -86,14 +86,14 @@
             "title": "API integrada ao Google Sheets",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/api.png",
             "description": "API integrada com o google sheets, que executa todas as operações CRUD necessárias para fazer integração com uma aplicação de sua escolha! ",
-            "link": "https://api-sheets.onrender.com/api/swagger",
+            "link": "http://54.219.136.176:8080/api/swagger",
             "github": "https://github.com/henrique307/api-sheets"
           },
           {
             "title": "REST API Petshop",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/petshop_api.png",
             "description": "API REST construida com NestJS (Framework que facilita a criação de API's Express de forma rápida e organizada) com atenticação JWT usando MongoDB como base de dados",
-            "link": "https://petshop-api-9fdk.onrender.com/api/swagger",
+            "link": "http://54.219.136.176:3000/api/swagger",
             "github": "https://github.com/henrique307/petshop-api"
           },
           {
