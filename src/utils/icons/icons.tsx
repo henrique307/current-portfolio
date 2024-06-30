@@ -31,7 +31,7 @@ export function FrontendIcon(props: IconInterface) {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={`size-6 ${props.className}`}
+      className={`${props.className}`}
     >
       <path
         strokeLinecap="round"
@@ -50,7 +50,7 @@ export function BackendIcon(props: IconInterface) {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={`size-6 ${props.className}`}
+      className={`${props.className}`}
     >
       <path
         strokeLinecap="round"
@@ -120,7 +120,7 @@ export function OtherToolsIcons(props: IconInterface) {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={`size-6 ${props.className}`}
+      className={`${props.className}`}
     >
       <path
         strokeLinecap="round"
