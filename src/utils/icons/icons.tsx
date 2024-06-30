@@ -89,7 +89,7 @@ export function Themes(props: IconInterface) {
   return (
     <label className={`swap swap-rotate scale-75 transition right-0 ${props.className}`}>
       {/* this hidden checkbox controls the state */}
-      <input type="checkbox" className="theme-controller" value="forest" />
+      <input type="checkbox" className="theme-controller" value="light" />
 
       {/* sun icon */}
       <svg
