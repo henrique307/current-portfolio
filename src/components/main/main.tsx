@@ -1,7 +1,7 @@
 import React from "react";
 import { Intro } from "./intro/intro";
-import { Experiencia } from "./experiencia/experiencia";
-import { Trabalhos } from "./trabalhos/trabalhos";
+import { Experiencia } from "./experience/experience";
+import { Trabalhos } from "./projects/projects";
 import { Testimonials } from "./testimonials/testimonials";
 import { CallToAction } from "./action/action";
 

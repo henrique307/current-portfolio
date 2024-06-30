@@ -1,0 +1,239 @@
+{
+  "header": {
+    "sections": [
+      {
+        "nome": "About Me",
+        "link": "#eu"
+      },
+      {
+        "nome": "Services",
+        "link": "#servicos"
+      },
+      {
+        "nome": "Projects",
+        "link": "#trabalhos"
+      },
+      {
+        "nome": "Testimonials",
+        "link": "#testemunhos"
+      },
+      {
+        "nome": "Work With Me",
+        "link": "#action"
+      }
+    ]
+  },
+  "main": {
+    "intro": {
+      "greetings": "Hello, my name is Henrique! I am a",
+      "typing_values": [
+        "Frontend Developer.",
+        "Backend Developer.",
+        "Fullstack Developer.",
+        "Chatbot Developer.",
+        "Automation Developer.",
+        "Software Developer."
+      ],
+      "description": "Specialist in responsive web development, automations, payment integrations, chatbots, APIs, and dedicated to creating a creative solution for your technological needs!",
+      "contact": "Contact"
+    },
+    "experience": {
+      "header": {
+        "left_header": "4+ years of experience working with software development",
+        "right_header": {
+          "main_header": "services",
+          "sub_header": "Discover the best services I offer, always focused on the success of your project."
+        }
+      },
+      "services": [
+        {
+          "header": "Front End",
+          "description": "Development of lightweight, elegant, and responsive interfaces, using the best tools on the market!"
+        },
+        {
+          "header": "Back End",
+          "description": "Scalable and optimized APIs following REST standards, with Swagger documentation and data validation!"
+        },
+        {
+          "header": "Tools",
+          "description": "Experience with the most widely used tools in the market; Docker, Git, Swagger, Github, Bitbucket, Heroku, Vercel, and much more!"
+        }
+      ]
+    },
+    "projects": {
+      "header": {
+        "sub_header": "Some of my favorite projects",
+        "main_header": "My projects"
+      },
+      "projects": {
+        "link_text": "view project",
+        "cards": [
+          {
+            "title": "Bakery Ecommerce",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/bakery.png",
+            "description": "E-commerce integrated with Stripe payment API, the website aims to present its products and prices beautifully and concisely to the customer.",
+            "link": "https://henrique307.github.io/bakery-website",
+            "github": "https://github.com/henrique307/bakery-website"
+          },
+          {
+            "title": "Travel Landing Page",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/hevor.png",
+            "description": "Website for a travel agency, with responsive design aimed at providing the best possible user experience.",
+            "link": "https://henrique307.github.io/travels-website",
+            "github": "https://github.com/henrique307/travels-website"
+          },
+          {
+            "title": "Google Sheets Integrated API",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/api.png",
+            "description": "API integrated with Google Sheets, executing all necessary CRUD operations to integrate with an application of your choice!",
+            "link": "http://54.219.136.176:8080/api/swagger",
+            "github": "https://github.com/henrique307/api-sheets"
+          },
+          {
+            "title": "Petshop REST API",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/petshop_api.png",
+            "description": "REST API built with NestJS (Framework that facilitates the creation of Express APIs quickly and organized) with JWT authentication using MongoDB as the database.",
+            "link": "http://54.219.136.176:3000/api/swagger",
+            "github": "https://github.com/henrique307/petshop-api"
+          },
+          {
+            "title": "Muay Thai Academy Landing",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/fight.png",
+            "description": "Website for a Muay Thai academy, with modern and responsive design aimed at informing the client about the sport's major benefits and culture!",
+            "link": "https://henrique307.github.io/santa-cruz-fight-club",
+            "github": "https://github.com/henrique307/santa-cruz-fight-club"
+          }
+        ]
+      }
+    },
+    "testimonials": {
+      "header": {
+        "main_header": "testimonials",
+        "sub_header": "What people say about my services 👀"
+      },
+      "testimonials": [
+        {
+          "name": "Mario",
+          "title": "Workana Client",
+          "profile": "",
+          "evaluation": "[...] Met all requested specifications, but also brought innovative ideas for improvements, demonstrating his commitment to excellence and proactivity. In addition, the delivery was done quickly. Congratulations on the exemplary work and dedication! I recommend to everyone!"
+        }
+      ]
+    },
+    "action": {
+      "header": "🌍 Let's take over the world! 🚀",
+      "main": "Start developing the solution you need for your business to reach new heights now!",
+      "action": "Contact me!",
+      "form": {
+        "failure": {
+          "sending_error": {
+            "header": "There was an error sending your message",
+            "main": "Please try again or contact me through my social networks at the bottom of the page!"
+          },
+          "input_error": {
+            "name": {
+              "required": "This field is required"
+            },
+            "email": {
+              "required": "This field is required",
+              "invalid": "Invalid email"
+            },
+            "message": {
+              "required": "Don't be shy 😊",
+              "max_lenght": "Too much text 👀"
+            }
+          }
+        },
+        "success": {
+          "header": "Message sent successfully!",
+          "main": "Thank you for contacting us!"
+        },
+        "inputs": {
+          "name": {
+            "label": "Your name",
+            "placeholder": "Name"
+          },
+          "email": {
+            "label": "Your email",
+            "placeholder": "awesome@email.net"
+          },
+          "message": {
+            "label": "Write a message",
+            "placeholder": "Hello Henrique! How are you doing?"
+          }
+        },
+        "comands": {
+          "send": "Send",
+          "back": "Back"
+        }
+      }
+    }
+  },
+  "footer": {
+    "henridev": {
+      "title": "Software Developer",
+      "rights": "All rights reserved"
+    },
+    "columns": [
+      {
+        "title": "Find me on",
+        "links": [
+          {
+            "nome": "Workana",
+            "link": "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e"
+          },
+          {
+            "nome": "99Freelas",
+            "link": "https://www.99freelas.com.br/user/henriqueflorencio"
+          },
+          {
+            "nome": "UpWork",
+            "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
+          }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          {
+            "nome": "Workana",
+            "link": "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e"
+          },
+          {
+            "nome": "99Freelas",
+            "link": "https://www.99freelas.com.br/user/henriqueflorencio"
+          },
+          {
+            "nome": "UpWork",
+            "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
+          }
+        ]
+      },
+      {
+        "title": "Map",
+        "links": [
+          {
+            "nome": "About Me",
+            "link": "#eu"
+          },
+          {
+            "nome": "Services",
+            "link": "#servicos"
+          },
+          {
+            "nome": "Projects",
+            "link": "#trabalhos"
+          },
+          {
+            "nome": "Testimonials",
+            "link": "#testemunhos"
+          },
+          {
+            "nome": "Work With Me",
+            "link": "#action"
+          }
+        ]
+      }
+    ]
+  }
+}
