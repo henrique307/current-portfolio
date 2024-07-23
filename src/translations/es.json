@@ -70,35 +70,35 @@
           "cards": [
             {
               "title": "Ecommerce Pastelería",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/bakery.png",
+              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bakery.png",
               "description": "E-commerce integrado con la API de pagos de Stripe, el sitio web tiene como objetivo presentar al cliente con belleza y concisión sus productos y precios",
               "link": "https://henrique307.github.io/bakery-website",
               "github": "https://github.com/henrique307/bakery-website"
             },
             {
               "title": "Landing Page Viajes",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/hevor.png",
+              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/hevor.png",
               "description": "Sitio para agencia de viajes, el sitio posee diseño responsivo y fue elaborado buscando la mejor experiencia posible del usuario",
               "link": "https://henrique307.github.io/travels-website",
               "github": "https://github.com/henrique307/travels-website"
             },
             {
               "title": "API integrada a Google Sheets",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/api.png",
+              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
               "description": "API integrada con Google Sheets, que ejecuta todas las operaciones CRUD necesarias para hacer integración con una aplicación de tu elección",
               "link": "http://54.219.136.176:8080/api/swagger",
               "github": "https://github.com/henrique307/api-sheets"
             },
             {
               "title": "REST API Tienda de Mascotas",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/petshop_api.png",
+              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/petshop_api.png",
               "description": "API REST construida con NestJS (un framework que facilita la creación de APIs Express de forma rápida y organizada) con autenticación JWT usando MongoDB como base de datos",
               "link": "http://54.219.136.176:3000/api/swagger",
               "github": "https://github.com/henrique307/petshop-api"
             },
             {
               "title": "Landing Page Gimnasio de Muay Thai",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/fight.png",
+              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/fight.png",
               "description": "Sitio para un gimnasio de Muay Thai, con diseño moderno y responsivo buscando informar al cliente sobre los mayores beneficios y sobre la cultura del deporte",
               "link": "https://henrique307.github.io/santa-cruz-fight-club",
               "github": "https://github.com/henrique307/santa-cruz-fight-club"

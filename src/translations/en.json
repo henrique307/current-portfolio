@@ -70,35 +70,35 @@
         "cards": [
           {
             "title": "Bakery Ecommerce",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/bakery.png",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bakery.png",
             "description": "E-commerce integrated with Stripe payment API, the website aims to present its products and prices beautifully and concisely to the customer.",
             "link": "https://henrique307.github.io/bakery-website",
             "github": "https://github.com/henrique307/bakery-website"
           },
           {
             "title": "Travel Landing Page",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/hevor.png",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/hevor.png",
             "description": "Website for a travel agency, with responsive design aimed at providing the best possible user experience.",
             "link": "https://henrique307.github.io/travels-website",
             "github": "https://github.com/henrique307/travels-website"
           },
           {
             "title": "Google Sheets Integrated API",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/api.png",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
             "description": "API integrated with Google Sheets, executing all necessary CRUD operations to integrate with an application of your choice!",
             "link": "http://54.219.136.176:8080/api/swagger",
             "github": "https://github.com/henrique307/api-sheets"
           },
           {
             "title": "Petshop REST API",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/petshop_api.png",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/petshop_api.png",
             "description": "REST API built with NestJS (Framework that facilitates the creation of Express APIs quickly and organized) with JWT authentication using MongoDB as the database.",
             "link": "http://54.219.136.176:3000/api/swagger",
             "github": "https://github.com/henrique307/petshop-api"
           },
           {
             "title": "Muay Thai Academy Landing",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/fight.png",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/fight.png",
             "description": "Website for a Muay Thai academy, with modern and responsive design aimed at informing the client about the sport's major benefits and culture!",
             "link": "https://henrique307.github.io/santa-cruz-fight-club",
             "github": "https://github.com/henrique307/santa-cruz-fight-club"
