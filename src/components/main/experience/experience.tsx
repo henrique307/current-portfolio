@@ -104,10 +104,10 @@ export function Experiencia() {
                 >
                     <TopArrow className="mt-5 lg:mt-8 scale-[.7] mx-auto cursor-pointer opacity-70 animate-bounce focus:display-none" />
                     <ul className="w-1/2 justify-center mt-10 lg:mt-12 mx-auto flex flex-wrap gap-5">
-                      {servicos[i].tecnologies.map((TechIcon) => {
+                      {servicos[i].tecnologies.map((TechIcon, i) => {
                         return (
-                          <li>
-                            <TechIcon className="text-4xl"/>
+                          <li key={i}>
+                            <TechIcon className="text-3xl sm:text-4xl"/>
                           </li>
                         );
                       })}

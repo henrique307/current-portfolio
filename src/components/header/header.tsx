@@ -105,9 +105,9 @@ export function HeaderComponent() {
                   </ul>
                   <summary className="btn px-0 bg-transparent border-transparent m-0 text-center text-lg cursor-pointer font-bold aspect-square">
                     {langs.map(
-                      (lang) =>
+                      (lang, i) =>
                         i18n.language === lang.name && (
-                          <img src={lang.url} alt={lang.name} className="aspect-video w-1/2"/>
+                          <img src={lang.url} alt={lang.name} className="aspect-video w-1/2" key={i}/>
                         )
                     )}
                   </summary>

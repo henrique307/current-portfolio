@@ -12,8 +12,8 @@ export function Trabalhos() {
       sub_header: string;
     };
     projects: {
-      link_text: string
-      cards: Project[]
+      link_text: string;
+      cards: Project[];
     };
   }
 
@@ -22,9 +22,12 @@ export function Trabalhos() {
     returnObjects: true,
   }) as ProjectsTranslations;
 
-  for(let project in projectsTranslations.projects.cards) {
-    const projects = projectsTranslations.projects.cards
-    projectsTranslations.projects.cards[project].icons = trabalhoIcons[projects.indexOf(projects[project])].icons
+  for (let project in projectsTranslations.projects.cards) {
+    const projects = projectsTranslations.projects.cards;
+    const projectIndex = projects.indexOf(projects[project]);
+
+    projectsTranslations.projects.cards[project].icons =
+      trabalhoIcons[projectIndex].icons;
   }
 
   return (
@@ -52,25 +55,30 @@ export function Trabalhos() {
               >
                 <div className="relative bg-base-300">
                   <div className="relative aspect-[16/8] z-0">
-                    <a
-                      href={trabalho.github}
-                      target="_blank"
-                      className="cursor-pointer z-20 transition-opacity opacity-0 hover:opacity-100 absolute backdrop-brightness-[.15] w-full h-full flex justify-center items-center"
-                    >
-                      <icons.IconGithub className="text-5xl" />
-                    </a>
+                    {trabalho.github && (
+                      <a
+                        href={trabalho.github}
+                        target="_blank"
+                        className="cursor-pointer z-20 transition-opacity opacity-0 hover:opacity-100 absolute backdrop-brightness-[.15] w-full h-full flex justify-center items-center"
+                      >
+                        <icons.IconGithub className="text-5xl" />
+                      </a>
+                    )}
                     <div className="absolute w-full z-10 h-full backdrop-grayscale-[.45]"></div>
                     <LazyLoadImage
                       src={trabalho.thumbnail}
-                      placeholder={<div className="skeleton"></div>}
+                      placeholder={
+                        <div className="skeleton h-full w-full"></div>
+                      }
                       width={"100%"}
                       height={"100%"}
                       alt={trabalho.title}
                       loading="lazy"
+                      className="object-cover object-center w-full h-full"
                     />
                   </div>
                   <div className="bottom-0 w-full p-3 pt-0">
-                    <h1 className="md:text-lg  cursor-default mt-5">
+                    <h1 className="text-lg cursor-default mt-5">
                       {trabalho.title}
                     </h1>
                     <div className="flex mt-2 justify-between">

@@ -83,6 +83,18 @@ export const icons = {
   },
 
   IconGithub(props: TechIconInterface) {
-    return <i className={`${props.className} devicon-github-original ${props.colored && "colored"}`} title="github"></i>;
+    return <i className={`${props.className} devicon-github-original ${props.colored && "colored"}`} title="Github"></i>;
+  },
+
+  IconNode(props: TechIconInterface) {
+    return <i className={`${props.className} devicon-nodejs-plain-wordmark ${props.colored && "colored"}`} title="Nodejs"></i>;
+  },
+
+  IconNext(props: TechIconInterface) {
+    return <i className={`${props.className} devicon-nextjs-plain ${props.colored && "colored"}`} title="Nextjs"></i>;
+  },
+
+  IconAPI(props: TechIconInterface) {
+    return <i className={`${props.className} text-base`} title="API integration">API</i>;
   },
 }

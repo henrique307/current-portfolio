@@ -63,7 +63,7 @@
     "projects": {
       "header": {
         "sub_header": "Alguns dos meus projetos favoritos",
-        "main_header": "Meus projetos"
+        "main_header": "projetos & demos"
       },
       "projects": {
         "link_text": "ver projeto",
@@ -95,6 +95,27 @@
             "description": "API REST construida com NestJS (Framework que facilita a criação de API's Express de forma rápida e organizada) com atenticação JWT usando MongoDB como base de dados",
             "link": "http://54.219.136.176:3000/api/swagger",
             "github": "https://github.com/henrique307/petshop-api"
+          },
+          {
+            "title": "Auth0 Multitenant Fullstack App",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
+            "description": "",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
+            "github": ""
+          },
+          {
+            "title": "AI images generator | Freepik API",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
+            "description": "",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_bot_IA-imagens_telegram.mp4",
+            "github": ""
+          },
+          {
+            "title": "Integração Ifood x Shipday",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
+            "description": "",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",
+            "github": ""
           },
           {
             "title": "Landing Academia de Muay Thai",

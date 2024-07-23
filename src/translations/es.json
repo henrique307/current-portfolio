@@ -1,240 +1,260 @@
 {
-    "header": {
-      "sections": [
+  "header": {
+    "sections": [
+      {
+        "nome": "Quién soy",
+        "link": "#eu"
+      },
+      {
+        "nome": "Servicios",
+        "link": "#servicos"
+      },
+      {
+        "nome": "Trabajos",
+        "link": "#trabalhos"
+      },
+      {
+        "nome": "Testimonios",
+        "link": "#testemunhos"
+      },
+      {
+        "nome": "Trabaja conmigo",
+        "link": "#action"
+      }
+    ]
+  },
+  "main": {
+    "intro": {
+      "greetings": "¡Hola, mi nombre es Henrique! Soy",
+      "typing_values": [
+        "Desarrollador Frontend.",
+        "Desarrollador Backend.",
+        "Desarrollador Fullstack.",
+        "Desarrollador de Chatbots.",
+        "Desarrollador de Software.",
+        "Desarrollador de Automatizaciones."
+      ],
+      "description": "¡Especialista en desarrollo web responsivo, automatizaciones, integraciones de pago, chatbots, APIs y dedicado a crear una solución creativa para tu necesidad tecnológica!",
+      "contact": "Contacto"
+    },
+    "experience": {
+      "header": {
+        "left_header": "Más de 4 años de experiencia trabajando en desarrollo de software",
+        "right_header": {
+          "main_header": "servicios",
+          "sub_header": "Descubre los mejores servicios que ofrezco, siempre enfocado en el éxito de tu proyecto."
+        }
+      },
+      "services": [
         {
-          "nome": "Quién soy",
-          "link": "#eu"
+          "header": "Front End",
+          "description": "¡Desarrollo de interfaces ligeras, elegantes y responsivas, utilizando las mejores herramientas del mercado!"
         },
         {
-          "nome": "Servicios",
-          "link": "#servicos"
+          "header": "Back End",
+          "description": "¡APIs escalables y optimizadas respetando el estándar REST, con documentación en Swagger y validación de datos!"
         },
         {
-          "nome": "Trabajos",
-          "link": "#trabalhos"
-        },
-        {
-          "nome": "Testimonios",
-          "link": "#testemunhos"
-        },
-        {
-          "nome": "Trabaja conmigo",
-          "link": "#action"
+          "header": "Herramientas",
+          "description": "¡Experiencia con las herramientas más utilizadas del mercado: Docker, Git, Swagger, Github, Bitbucket, Heroku, Vercel y mucho más!"
         }
       ]
     },
-    "main": {
-      "intro": {
-        "greetings": "¡Hola, mi nombre es Henrique! Soy",
-        "typing_values": [
-          "Desarrollador Frontend.",
-          "Desarrollador Backend.",
-          "Desarrollador Fullstack.",
-          "Desarrollador de Chatbots.",
-          "Desarrollador de Software.",
-          "Desarrollador de Automatizaciones."
-        ],
-        "description": "¡Especialista en desarrollo web responsivo, automatizaciones, integraciones de pago, chatbots, APIs y dedicado a crear una solución creativa para tu necesidad tecnológica!",
-        "contact": "Contacto"
-      },
-      "experience": {
-        "header": {
-          "left_header": "Más de 4 años de experiencia trabajando en desarrollo de software",
-          "right_header": {
-            "main_header": "servicios",
-            "sub_header": "Descubre los mejores servicios que ofrezco, siempre enfocado en el éxito de tu proyecto."
-          }
-        },
-        "services": [
-          {
-            "header": "Front End",
-            "description": "¡Desarrollo de interfaces ligeras, elegantes y responsivas, utilizando las mejores herramientas del mercado!"
-          },
-          {
-            "header": "Back End",
-            "description": "¡APIs escalables y optimizadas respetando el estándar REST, con documentación en Swagger y validación de datos!"
-          },
-          {
-            "header": "Herramientas",
-            "description": "¡Experiencia con las herramientas más utilizadas del mercado: Docker, Git, Swagger, Github, Bitbucket, Heroku, Vercel y mucho más!"
-          }
-        ]
+    "projects": {
+      "header": {
+        "sub_header": "Algunos de mis proyectos favoritos",
+        "main_header": "proyectos & demos"
       },
       "projects": {
-        "header": {
-          "sub_header": "Algunos de mis proyectos favoritos",
-          "main_header": "Mis proyectos"
-        },
-        "projects": {
-          "link_text": "ver proyecto",
-          "cards": [
-            {
-              "title": "Ecommerce Pastelería",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bakery.png",
-              "description": "E-commerce integrado con la API de pagos de Stripe, el sitio web tiene como objetivo presentar al cliente con belleza y concisión sus productos y precios",
-              "link": "https://henrique307.github.io/bakery-website",
-              "github": "https://github.com/henrique307/bakery-website"
-            },
-            {
-              "title": "Landing Page Viajes",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/hevor.png",
-              "description": "Sitio para agencia de viajes, el sitio posee diseño responsivo y fue elaborado buscando la mejor experiencia posible del usuario",
-              "link": "https://henrique307.github.io/travels-website",
-              "github": "https://github.com/henrique307/travels-website"
-            },
-            {
-              "title": "API integrada a Google Sheets",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
-              "description": "API integrada con Google Sheets, que ejecuta todas las operaciones CRUD necesarias para hacer integración con una aplicación de tu elección",
-              "link": "http://54.219.136.176:8080/api/swagger",
-              "github": "https://github.com/henrique307/api-sheets"
-            },
-            {
-              "title": "REST API Tienda de Mascotas",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/petshop_api.png",
-              "description": "API REST construida con NestJS (un framework que facilita la creación de APIs Express de forma rápida y organizada) con autenticación JWT usando MongoDB como base de datos",
-              "link": "http://54.219.136.176:3000/api/swagger",
-              "github": "https://github.com/henrique307/petshop-api"
-            },
-            {
-              "title": "Landing Page Gimnasio de Muay Thai",
-              "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/fight.png",
-              "description": "Sitio para un gimnasio de Muay Thai, con diseño moderno y responsivo buscando informar al cliente sobre los mayores beneficios y sobre la cultura del deporte",
-              "link": "https://henrique307.github.io/santa-cruz-fight-club",
-              "github": "https://github.com/henrique307/santa-cruz-fight-club"
-            }
-          ]
-        }
-      },
-      "testimonials": {
-        "header": {
-          "main_header": "valoraciones",
-          "sub_header": "Lo que dicen sobre mis servicios 👀"
-        },
-        "testimonials": [
+        "link_text": "ver proyecto",
+        "cards": [
           {
-            "name": "Mario",
-            "title": "Cliente Workana",
-            "profile": "",
-            "evaluation": "[...] Cumplió con todas las especificaciones solicitadas, pero también aportó ideas innovadoras para mejoras, lo que demuestra su compromiso con la excelencia y su proactividad. Además, la entrega se hizo de manera rápida. ¡Felicitaciones por el trabajo ejemplar y la dedicación! ¡Lo recomiendo a todos!"
+            "title": "Ecommerce Pastelería",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bakery.png",
+            "description": "E-commerce integrado con la API de pagos de Stripe, el sitio web tiene como objetivo presentar al cliente con belleza y concisión sus productos y precios",
+            "link": "https://henrique307.github.io/bakery-website",
+            "github": "https://github.com/henrique307/bakery-website"
+          },
+          {
+            "title": "Landing Page Viajes",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/hevor.png",
+            "description": "Sitio para agencia de viajes, el sitio posee diseño responsivo y fue elaborado buscando la mejor experiencia posible del usuario",
+            "link": "https://henrique307.github.io/travels-website",
+            "github": "https://github.com/henrique307/travels-website"
+          },
+          {
+            "title": "API integrada a Google Sheets",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
+            "description": "API integrada con Google Sheets, que ejecuta todas las operaciones CRUD necesarias para hacer integración con una aplicación de tu elección",
+            "link": "http://54.219.136.176:8080/api/swagger",
+            "github": "https://github.com/henrique307/api-sheets"
+          },
+          {
+            "title": "REST API Tienda de Mascotas",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/petshop_api.png",
+            "description": "API REST construida con NestJS (un framework que facilita la creación de APIs Express de forma rápida y organizada) con autenticación JWT usando MongoDB como base de datos",
+            "link": "http://54.219.136.176:3000/api/swagger",
+            "github": "https://github.com/henrique307/petshop-api"
+          },
+          {
+            "title": "Aplicación Fullstack Multitenant con Auth0",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
+            "description": "",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
+            "github": ""
+          },
+          {
+            "title": "Generador de imágenes AI | API de Freepik",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
+            "description": "",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_bot_IA-imagens_telegram.mp4",
+            "github": ""
+          },
+          {
+            "title": "Integración Ifood x Shipday",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
+            "description": "",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",
+            "github": ""
+          },
+          {
+            "title": "Landing Page Gimnasio de Muay Thai",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/fight.png",
+            "description": "Sitio para un gimnasio de Muay Thai, con diseño moderno y responsivo buscando informar al cliente sobre los mayores beneficios y sobre la cultura del deporte",
+            "link": "https://henrique307.github.io/santa-cruz-fight-club",
+            "github": "https://github.com/henrique307/santa-cruz-fight-club"
+          }
+        ]
+      }
+    },
+    "testimonials": {
+      "header": {
+        "main_header": "valoraciones",
+        "sub_header": "Lo que dicen sobre mis servicios 👀"
+      },
+      "testimonials": [
+        {
+          "name": "Mario",
+          "title": "Cliente Workana",
+          "profile": "",
+          "evaluation": "[...] Cumplió con todas las especificaciones solicitadas, pero también aportó ideas innovadoras para mejoras, lo que demuestra su compromiso con la excelencia y su proactividad. Además, la entrega se hizo de manera rápida. ¡Felicitaciones por el trabajo ejemplar y la dedicación! ¡Lo recomiendo a todos!"
+        }
+      ]
+    },
+    "action": {
+      "header": "🌍 ¡Vamos a dominar el mundo! 🚀",
+      "main": "¡Empieza ahora a desarrollar la solución que necesitas para que tu negocio alcance un nuevo nivel!",
+      "action": "¡Habla conmigo!",
+      "form": {
+        "failure": {
+          "sending_error": {
+            "header": "Hubo un error al enviar tu mensaje",
+            "main": "¡Por favor, intenta nuevamente o contáctame a través de mis redes sociales al final de la página!"
+          },
+          "input_error": {
+            "name": {
+              "required": "Este campo es obligatorio"
+            },
+            "email": {
+              "required": "Este campo es obligatorio",
+              "invalid": "Email inválido"
+            },
+            "message": {
+              "required": "No seas tímido 😊",
+              "max_lenght": "Mucho texto 👀"
+            }
+          }
+        },
+        "success": {
+          "header": "¡Mensaje enviado con éxito!",
+          "main": "¡Gracias por tu contacto!"
+        },
+        "inputs": {
+          "name": {
+            "label": "Tu nombre",
+            "placeholder": "Nombre"
+          },
+          "email": {
+            "label": "Tu email",
+            "placeholder": "awesome@email.net"
+          },
+          "message": {
+            "label": "Escribe un mensaje",
+            "placeholder": "¡Hola Henrique! ¿Cómo estás?"
+          }
+        },
+        "comands": {
+          "send": "Enviar",
+          "back": "Volver"
+        }
+      }
+    }
+  },
+  "footer": {
+    "henridev": {
+      "title": "Desarrollador de software",
+      "rights": "Todos los derechos reservados"
+    },
+    "columns": [
+      {
+        "title": "Encuéntrame en",
+        "links": [
+          {
+            "nome": "Workana",
+            "link": "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e"
+          },
+          {
+            "nome": "99Freelas",
+            "link": "https://www.99freelas.com.br/user/henriqueflorencio"
+          },
+          {
+            "nome": "UpWork",
+            "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
           }
         ]
       },
-      "action": {
-        "header": "🌍 ¡Vamos a dominar el mundo! 🚀",
-        "main": "¡Empieza ahora a desarrollar la solución que necesitas para que tu negocio alcance un nuevo nivel!",
-        "action": "¡Habla conmigo!",
-        "form": {
-          "failure": {
-            "sending_error": {
-              "header": "Hubo un error al enviar tu mensaje",
-              "main": "¡Por favor, intenta nuevamente o contáctame a través de mis redes sociales al final de la página!"
-            },
-            "input_error": {
-              "name": {
-                "required": "Este campo es obligatorio"
-              },
-              "email": {
-                "required": "Este campo es obligatorio",
-                "invalid": "Email inválido"
-              },
-              "message": {
-                "required": "No seas tímido 😊",
-                "max_lenght": "Mucho texto 👀"
-              }
-            }
+      {
+        "title": "Servicios",
+        "links": [
+          {
+            "nome": "Workana",
+            "link": "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e"
           },
-          "success": {
-            "header": "¡Mensaje enviado con éxito!",
-            "main": "¡Gracias por tu contacto!"
+          {
+            "nome": "99Freelas",
+            "link": "https://www.99freelas.com.br/user/henriqueflorencio"
           },
-          "inputs": {
-            "name": {
-              "label": "Tu nombre",
-              "placeholder": "Nombre"
-            },
-            "email": {
-              "label": "Tu email",
-              "placeholder": "awesome@email.net"
-            },
-            "message": {
-              "label": "Escribe un mensaje",
-              "placeholder": "¡Hola Henrique! ¿Cómo estás?"
-            }
-          },
-          "comands": {
-            "send": "Enviar",
-            "back": "Volver"
+          {
+            "nome": "UpWork",
+            "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
           }
-        }
-      }
-    },
-    "footer": {
-      "henridev": {
-        "title": "Desarrollador de software",
-        "rights": "Todos los derechos reservados"
+        ]
       },
-      "columns": [
-        {
-          "title": "Encuéntrame en",
-          "links": [
-            {
-              "nome": "Workana",
-              "link": "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e"
-            },
-            {
-              "nome": "99Freelas",
-              "link": "https://www.99freelas.com.br/user/henriqueflorencio"
-            },
-            {
-              "nome": "UpWork",
-              "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
-            }
-          ]
-        },
-        {
-          "title": "Servicios",
-          "links": [
-            {
-              "nome": "Workana",
-              "link": "https://www.workana.com/freelancer/2229fcb56a93fd19c6c6853bc23d045e"
-            },
-            {
-              "nome": "99Freelas",
-              "link": "https://www.99freelas.com.br/user/henriqueflorencio"
-            },
-            {
-              "nome": "UpWork",
-              "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
-            }
-          ]
-        },
-        {
-          "title": "Mapa",
-          "links": [
-            {
-              "nome": "Quién soy",
-              "link": "#eu"
-            },
-            {
-              "nome": "Servicios",
-              "link": "#servicos"
-            },
-            {
-              "nome": "Trabajos",
-              "link": "#trabalhos"
-            },
-            {
-              "nome": "Testimonios",
-              "link": "#testemunhos"
-            },
-            {
-              "nome": "Trabaja conmigo",
-              "link": "#action"
-            }
-          ]
-        }
-      ]
-    }
+      {
+        "title": "Mapa",
+        "links": [
+          {
+            "nome": "Quién soy",
+            "link": "#eu"
+          },
+          {
+            "nome": "Servicios",
+            "link": "#servicos"
+          },
+          {
+            "nome": "Trabajos",
+            "link": "#trabalhos"
+          },
+          {
+            "nome": "Testimonios",
+            "link": "#testemunhos"
+          },
+          {
+            "nome": "Trabaja conmigo",
+            "link": "#action"
+          }
+        ]
+      }
+    ]
   }
-  
+}
