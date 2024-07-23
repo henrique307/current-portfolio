@@ -87,7 +87,9 @@ export function Settings(props: IconInterface) {
 
 export function Themes(props: IconInterface) {
   return (
-    <label className={`swap swap-rotate scale-75 transition right-0 ${props.className}`}>
+    <label
+      className={`swap swap-rotate scale-75 transition right-0 ${props.className}`}
+    >
       {/* this hidden checkbox controls the state */}
       <input type="checkbox" className="theme-controller" value="light" />
 
@@ -163,6 +165,24 @@ export function NextArrow(props: IconInterface) {
         strokeLinecap="round"
         strokeLinejoin="round"
         d="m8.25 4.5 7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  );
+}
+export function TopArrow(props: IconInterface) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={`size-6 ${props.className}`}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m4.5 15.75 7.5-7.5 7.5 7.5"
       />
     </svg>
   );

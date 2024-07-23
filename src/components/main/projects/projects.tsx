@@ -1,5 +1,5 @@
 import "./projects.css";
-import { icons } from "../../../utils/icons/texh-icons";
+import { icons } from "../../../utils/icons/tech-icons";
 import { NewWindowIcon } from "../../../utils/icons/icons";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useTranslation } from "react-i18next";

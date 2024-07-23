@@ -1,4 +1,4 @@
-import { TechIconInterface, icons } from "../../../../utils/icons/texh-icons";
+import { TechIconInterface, icons } from "../../../../utils/icons/tech-icons";
 
 export interface Project {
   title: string;

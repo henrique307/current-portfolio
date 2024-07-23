@@ -2,7 +2,9 @@ import {
   BackendIcon,
   FrontendIcon,
   OtherToolsIcons,
+  TopArrow,
 } from "../../../utils/icons/icons";
+import { icons } from "../../../utils/icons/tech-icons";
 import "./experience.css";
 import { useTranslation } from "react-i18next";
 
@@ -26,9 +28,41 @@ export function Experiencia() {
     returnObjects: true,
   }) as ServicesTranstalation;
   const servicos = [
-    (props: string) => <FrontendIcon className={props} />,
-    (props: string) => <BackendIcon className={props} />,
-    (props: string) => <OtherToolsIcons className={props} />,
+    {
+      icon: (props: string) => <FrontendIcon className={props} />,
+      tecnologies: [
+        icons.IconHtml5,
+        icons.IconReact,
+        icons.IconRedux,
+        icons.IconJavascript,
+        icons.IconCss3,
+        icons.IconSass,
+        icons.IconWordpress,
+        icons.IconTailwindcss,
+      ],
+    },
+    {
+      icon: (props: string) => <BackendIcon className={props} />,
+      tecnologies: [
+        icons.IconNestjs,
+        icons.IconMysql,
+        icons.IconMongodb,
+        icons.IconExpress,
+        icons.IconSwagger,
+      ],
+    },
+    {
+      icon: (props: string) => <OtherToolsIcons className={props} />,
+      tecnologies: [
+        icons.IconAmazonWebServices,
+        icons.IconDocker,
+        icons.IconGithub,
+        icons.IconGoogle,
+        icons.IconHeroku,
+        icons.IconStripe,
+        icons.IconVercel,
+      ],
+    },
   ];
 
   return (
@@ -54,16 +88,32 @@ export function Experiencia() {
           {experienceTranslation.services.map((servico, i) => {
             return (
               <div
-                className="px-8 text-center w-[80%] sm:w-96 md:w-86 py-10 bg-base-100 inline gap-3 border-b-secondary border-b-2"
+                className="px-8 flex overflow-hidden flex-col justify-between text-center w-[80%] sm:w-96 md:w-86 pt-10 pb-10 bg-base-100 inline gap-3 border-b-secondary border-b-2 relative"
                 key={`exp-${i}`}
               >
-                {servicos[i]("size-14 mb-3 mx-auto")}
+                {servicos[i].icon("size-14 mb-3 mx-auto")}
                 <h1 className="text-2xl font-bold bg-gradient-to-t from-primary to-indigo-500 text-transparent bg-clip-text">
                   {servico.header}
                 </h1>
                 <span className="text-sm tracking-loose sm:text-base md:text-lg text-base-content inline-block mt-5">
                   {servico.description}
                 </span>
+                <div
+                  tabIndex={0}
+                  className={`flex flex-col left-0 z-0 w-full h-full absolute translate-y-[70%] focus:translate-y-0 focus:bg-black focus:bottom-0 focus:opacity-90 transition`}
+                >
+                    <TopArrow className="mt-5 lg:mt-8 scale-[.7] mx-auto cursor-pointer opacity-70 animate-bounce focus:display-none" />
+                    <ul className="w-1/2 justify-center mt-10 lg:mt-12 mx-auto flex flex-wrap gap-5">
+                      {servicos[i].tecnologies.map((TechIcon) => {
+                        return (
+                          <li>
+                            <TechIcon className="text-4xl"/>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  {/* <div tabIndex={0} className="z-10 absolute layer w-full h-full "></div> */}
+                </div>
               </div>
             );
           })}
