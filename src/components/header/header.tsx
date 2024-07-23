@@ -11,7 +11,20 @@ export function HeaderComponent() {
 
   const { t, i18n } = useTranslation("global");
   const navItems = t("header.sections", { returnObjects: true }) as NavItem[];
-  const langs = ["ES", "EN", "PT"];
+  const langs = [
+    {
+      url: "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/bandeiras/espanha bandeira.png",
+      name: "ES",
+    },
+    {
+      url: "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/bandeiras/usa+bandeira.png",
+      name: "EN",
+    },
+    {
+      url: "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/bandeiras/brasil-bandeira.png",
+      name: "PT",
+    },
+  ];
 
   function handleLanguageChange(lang: string) {
     i18n.changeLanguage(lang);
@@ -77,15 +90,27 @@ export function HeaderComponent() {
                 <details>
                   <ul>
                     {langs.map((lang, i) => {
-                      if(lang === i18n.language) return;
+                      if (lang.name === i18n.language) return;
                       return (
                         <li key={i}>
-                          <a onClick={() => handleLanguageChange(lang)} className="uppercase">{lang}</a>
+                          <a
+                            onClick={() => handleLanguageChange(lang.name)}
+                            className="uppercase"
+                          >
+                            <img src={lang.url} alt={lang.name} className="" />
+                          </a>
                         </li>
                       );
                     })}
                   </ul>
-                  <summary className="uppercase btn px-0 bg-transparent border-transparent m-0 text-center text-lg cursor-pointer font-bold aspect-square">{i18n.language}</summary>
+                  <summary className="btn px-0 bg-transparent border-transparent m-0 text-center text-lg cursor-pointer font-bold aspect-square">
+                    {langs.map(
+                      (lang) =>
+                        i18n.language === lang.name && (
+                          <img src={lang.url} alt={lang.name} className="aspect-video w-1/2"/>
+                        )
+                    )}
+                  </summary>
                 </details>
               </ul>
             </div>
