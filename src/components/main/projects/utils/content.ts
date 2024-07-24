@@ -38,9 +38,6 @@ export const trabalhoIcons = [
     ],
   },
   {
-    icons: [icons.IconJavascript, icons.IconHtml5, icons.IconCss3],
-  },
-  {
     icons: [icons.IconReact, icons.IconTailwindcss, icons.IconNestjs],
   },
   {
@@ -48,5 +45,8 @@ export const trabalhoIcons = [
   },
   {
     icons: [icons.IconAPI, icons.IconExpress, icons.IconNode],
+  },
+  {
+    icons: [icons.IconJavascript, icons.IconHtml5, icons.IconCss3],
   },
 ];
