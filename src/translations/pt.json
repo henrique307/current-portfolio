@@ -118,11 +118,10 @@
             "github": ""
           },
           {
-            "title": "Landing Academia de Muay Thai",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/fight.png",
-            "description": "Site para uma academia de Muay Thai, com design moderno e responsivo visando informar o cliente sobre os maiores beneficios e sobre a cultura do esporte!",
-            "link": "https://henrique307.github.io/santa-cruz-fight-club",
-            "github": "https://github.com/henrique307/santa-cruz-fight-club"
+            "title": "Typescript Selenium | Webscrapper",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/selnode.png",
+            "description": "",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/webscrapper+selenium+typescript.mp4"
           }
         ]
       }
