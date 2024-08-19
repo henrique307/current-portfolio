@@ -1,7 +1,8 @@
-import React from "react";
+import React, { SVGProps } from "react";
 
 export interface IconInterface {
   className?: string;
+  onClick?: Function
 }
 
 export function DownloadIcon(props: IconInterface) {
@@ -169,7 +170,7 @@ export function NextArrow(props: IconInterface) {
     </svg>
   );
 }
-export function TopArrow(props: IconInterface) {
+export function TopArrow(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -177,6 +178,7 @@ export function TopArrow(props: IconInterface) {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
+      onClick={props.onClick}
       className={`size-6 ${props.className}`}
     >
       <path

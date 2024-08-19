@@ -99,28 +99,28 @@
           {
             "title": "Auth0 Multitenant Fullstack App",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
-            "description": "",
+            "description": "Aplicação fullstack de login multitenant usando auth0, aplicação possibilita a participação em diversas equipes diferentes através de um sistema de login multitenant",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
             "github": ""
           },
           {
             "title": "AI images generator | Freepik API",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
-            "description": "",
+            "description": "Chatbot Gerador de imagens por IA usando a API do Freepik ou do NovitaAI, chatbot possui mensalidade embutida com pagamento usando a API do mercado pago",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_bot_IA-imagens_telegram.mp4",
             "github": ""
           },
           {
             "title": "Integração Ifood x Shipday",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
-            "description": "",
+            "description": "Integração entre as plataformas Ifood e Shipday usando um webhook como ponte para conectar ambas as aplicações através de suas respectivas APIs",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",
             "github": ""
           },
           {
             "title": "Typescript Selenium | Webscrapper",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/selnode.png",
-            "description": "",
+            "description": "Webscrapper com Selenium webdriver e Typescript, aplicação busca informações sobre produtos no mercado livre através de uma chamada da API que inicia a pesquisa, filtros podem ser definidos no body da requisição",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/webscrapper+selenium+typescript.mp4"
           }
         ]

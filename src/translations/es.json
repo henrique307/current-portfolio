@@ -97,32 +97,31 @@
             "github": "https://github.com/henrique307/petshop-api"
           },
           {
-            "title": "Aplicación Fullstack Multitenant con Auth0",
+            "title": "Auth0 Aplicación Fullstack Multitenant",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
-            "description": "",
+            "description": "Aplicación fullstack con inicio de sesión multitenant usando Auth0. La aplicación permite la participación en varios equipos a través de un sistema de inicio de sesión multitenant.",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
             "github": ""
           },
           {
-            "title": "Generador de imágenes AI | API de Freepik",
+            "title": "Generador de Imágenes IA | API de Freepik",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
-            "description": "",
+            "description": "Chatbot generador de imágenes IA usando la API de Freepik o NovitaAI. El chatbot incluye una función de suscripción con integración de pago usando la API de Mercado Pago.",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_bot_IA-imagens_telegram.mp4",
             "github": ""
           },
           {
             "title": "Integración Ifood x Shipday",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
-            "description": "",
+            "description": "Integración entre las plataformas Ifood y Shipday usando un webhook para conectar ambas aplicaciones a través de sus respectivas APIs.",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",
             "github": ""
           },
           {
-            "title": "Landing Page Gimnasio de Muay Thai",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/fight.png",
-            "description": "Sitio para un gimnasio de Muay Thai, con diseño moderno y responsivo buscando informar al cliente sobre los mayores beneficios y sobre la cultura del deporte",
-            "link": "https://henrique307.github.io/santa-cruz-fight-club",
-            "github": "https://github.com/henrique307/santa-cruz-fight-club"
+            "title": "Typescript Selenium | Web Scraper",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/selnode.png",
+            "description": "Web scraper usando Selenium WebDriver y TypeScript. La aplicación busca información sobre productos en Mercado Libre a través de una llamada API que inicia la búsqueda. Los filtros se pueden configurar en el cuerpo de la solicitud.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/webscrapper+selenium+typescript.mp4"
           }
         ]
       }

@@ -99,30 +99,29 @@
           {
             "title": "Auth0 Multitenant Fullstack App",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
-            "description": "",
+            "description": "Fullstack application with multitenant login using Auth0. The application allows participation in various teams through a multitenant login system.",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
             "github": ""
           },
           {
-            "title": "AI images generator | Freepik API",
+            "title": "AI Images Generator | Freepik API",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
-            "description": "",
+            "description": "AI image generator chatbot using the Freepik API or NovitaAI. The chatbot includes a subscription feature with payment integration using the Mercado Pago API.",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_bot_IA-imagens_telegram.mp4",
             "github": ""
           },
           {
-            "title": "Integration Ifood x Shipday",
+            "title": "Ifood x Shipday Integration",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
-            "description": "",
+            "description": "Integration between Ifood and Shipday platforms using a webhook to connect both applications through their respective APIs.",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",
             "github": ""
           },
           {
-            "title": "Muay Thai Academy Landing",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/fight.png",
-            "description": "Website for a Muay Thai academy, with modern and responsive design aimed at informing the client about the sport's major benefits and culture!",
-            "link": "https://henrique307.github.io/santa-cruz-fight-club",
-            "github": "https://github.com/henrique307/santa-cruz-fight-club"
+            "title": "Typescript Selenium | Webscraper",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/selnode.png",
+            "description": "Web scraper using Selenium WebDriver and TypeScript. The application searches for product information on Mercado Livre through an API call that initiates the search. Filters can be set in the request body.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/webscrapper+selenium+typescript.mp4"
           }
         ]
       }

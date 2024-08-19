@@ -1,9 +1,10 @@
 import "./projects.css";
 import { icons } from "../../../utils/icons/tech-icons";
-import { NewWindowIcon } from "../../../utils/icons/icons";
+import { NewWindowIcon, TopArrow } from "../../../utils/icons/icons";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useTranslation } from "react-i18next";
 import { Project, trabalhoIcons } from "./utils/content";
+import { useState } from "react";
 
 export function Trabalhos() {
   interface ProjectsTranslations {
@@ -17,6 +18,7 @@ export function Trabalhos() {
     };
   }
 
+  const [open, setOpen] = useState(false);
   const { t } = useTranslation("global");
   const projectsTranslations = t("main.projects", {
     returnObjects: true,
@@ -33,7 +35,7 @@ export function Trabalhos() {
   return (
     <section
       id="trabalhos"
-      className="py-32 bg-base-100 w-full flex justify-center"
+      className={`pb-32 pt-20 bg-base-100 w-full flex justify-center ${!open ? "max-h-[2400px] md:max-h-[1000px] xl:max-h-[800px]" : "max-h-fit"} overflow-hidden relative transition-all duration-1000`}
     >
       <div className="text-left flex flex-col items-center mx-auto w-[90%]">
         <div className="flex justify-between w-[90%] items-end">
@@ -81,6 +83,7 @@ export function Trabalhos() {
                     <h1 className="text-lg cursor-default mt-5">
                       {trabalho.title}
                     </h1>
+                    <article className="opacity-75 my-5">{trabalho.description}</article>
                     <div className="flex mt-2 justify-between">
                       <div className="flex items-center gap-2">
                         {trabalho.icons?.map((Icon, i) => {
@@ -109,6 +112,9 @@ export function Trabalhos() {
             );
           })}
         </div>
+      </div>
+      <div className="h-20 w-full absolute bottom-0 flex justify-center items-center bg-gradient-to-t from-base-300 from-40%">
+        <a href={!open ? `#trabalhos`: undefined}><TopArrow onClick={() => {setOpen(!open)}} className={`${!open && "rotate-180"} cursor-pointer`} /></a>
       </div>
     </section>
   );
