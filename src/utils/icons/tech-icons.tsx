@@ -97,4 +97,20 @@ export const icons = {
   IconAPI(props: TechIconInterface) {
     return <i className={`${props.className} text-base`} title="API integration">API</i>;
   },
+
+  IconSpring(props: TechIconInterface) {
+    return <i className={`${props.className} devicon-spring-original ${props.colored && "colored"}`} title="SpringBoot"></i>;
+  },
+
+  IconJava(props: TechIconInterface) {
+    return <i className={`${props.className} devicon-java-plain ${props.colored && "colored"}`} title="Java"></i>;
+  },
+  
+  IconCSharp(props: TechIconInterface) {
+    return <i className={`${props.className} devicon-csharp-plain ${props.colored && "colored"}`} title="C#"></i>;
+  },
+  
+  IconDotNet(props: TechIconInterface) {
+    return <i className={`${props.className} devicon-dotnetcore-plain ${props.colored && "colored"}`} title=".Net"></i>;
+  },
 }

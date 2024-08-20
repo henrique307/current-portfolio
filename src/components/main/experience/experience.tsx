@@ -49,6 +49,10 @@ export function Experiencia() {
         icons.IconMongodb,
         icons.IconExpress,
         icons.IconSwagger,
+        icons.IconCSharp,
+        icons.IconDotNet,
+        icons.IconJava,
+        icons.IconSpring
       ],
     },
     {
