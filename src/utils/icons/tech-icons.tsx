@@ -113,4 +113,8 @@ export const icons = {
   IconDotNet(props: TechIconInterface) {
     return <i className={`${props.className} devicon-dotnetcore-plain ${props.colored && "colored"}`} title=".Net"></i>;
   },
+
+  IconSelenium(props: TechIconInterface) {
+    return <i className={`${props.className} devicon-selenium-original ${props.colored && "colored"}`} title="Selenium Webdriver"></i>;
+  },
 }

@@ -47,6 +47,6 @@ export const trabalhoIcons = [
     icons: [icons.IconAPI, icons.IconExpress, icons.IconNode],
   },
   {
-    icons: [icons.IconJavascript, icons.IconHtml5, icons.IconCss3],
+    icons: [icons.IconNode, icons.IconAPI, icons.IconSelenium, icons.IconNestjs],
   },
 ];
