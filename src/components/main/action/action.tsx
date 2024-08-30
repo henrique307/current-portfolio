@@ -98,7 +98,7 @@ export function CallToAction() {
   });
 
   async function sendMessage(data: MessageInterface) {
-    return await fetch("http://54.219.136.176:8080/telegram", {
+    return await fetch("https://api-sheets.onrender.com/telegram", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
