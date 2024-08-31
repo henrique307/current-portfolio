@@ -63,7 +63,7 @@ export function Testimonials() {
                         <img
                           className="object-center object-cover"
                           src={
-                            (!testemunho.profile &&
+                            (testemunho.profile ||
                               `https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=${testemunho.name}`) ||
                             undefined
                           }

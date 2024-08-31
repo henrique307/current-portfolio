@@ -137,6 +137,12 @@
           "title": "Cliente Workana",
           "profile": "",
           "evaluation": "[...] Atendeu a todas as especificações solicitadas, mas também trouxe ideias inovadoras para melhorias, o que demonstra seu compromisso com a excelência e sua proatividade. Além disso, a entrega foi feita de forma rápida. Parabéns pelo trabalho exemplar e pela dedicação! Recomendo a todos!"
+        },
+        {
+          "name": "Kaique B.",
+          "title": "Cliente 99Freelas",
+          "profile": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/cliente-profiles/kaique-barreto.jpg",
+          "evaluation": "Muito competente! Excelente trabalho!"
         }
       ]
     },
