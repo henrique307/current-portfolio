@@ -53,8 +53,8 @@ export function Testimonials() {
           {testimonialsTranslation.testimonials.map((testemunho, i) => {
             return (
               <SplideSlide key={i}>
-                <div className="py-12 w-full mx-auto max-w-[50rem]">
-                  <span className="text-sm md:text-lg block text-base-content opacity-75 mb-16 text-center">
+                <div className="h-72 py-12 w-full mx-auto max-w-[50rem] flex flex-col justify-around">
+                  <span className="text-sm md:text-lg block text-base-content opacity-75 text-center">
                     {testemunho.evaluation}
                   </span>
                   <div className="flex gap-3 items-center justify-center">
