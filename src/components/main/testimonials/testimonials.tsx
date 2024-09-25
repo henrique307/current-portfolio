@@ -8,7 +8,7 @@ export function Testimonials() {
   const splideOptions: Options = {
     autoplay: true,
     focus: "center",
-    drag: false,
+    drag: true,
     rewind: true,
     flickMaxPages: 1,
     pauseOnHover: true,
