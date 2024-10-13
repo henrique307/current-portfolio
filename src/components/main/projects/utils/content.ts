@@ -22,6 +22,12 @@ export const trabalhoIcons = [
     icons: [icons.IconJavascript, icons.IconHtml5, icons.IconSass],
   },
   {
+    icons: [icons.IconTypescript, icons.IconReact],
+  },
+  {
+    icons: [icons.IconTypescript, icons.IconReact],
+  },
+  {
     icons: [
       icons.IconGoogle,
       icons.IconNestjs,
@@ -41,12 +47,28 @@ export const trabalhoIcons = [
     icons: [icons.IconReact, icons.IconTailwindcss, icons.IconNestjs],
   },
   {
+    icons: [
+      icons.IconAPI,
+      icons.IconExpress,
+      icons.IconNode,
+      icons.IconTypescript,
+    ],
+  },
+  {
+    icons: [icons.IconNode, icons.IconTypescript, icons.IconAPI],
+  },
+  {
     icons: [icons.IconNode, icons.IconAPI, icons.IconExpress],
   },
   {
     icons: [icons.IconAPI, icons.IconExpress, icons.IconNode],
   },
   {
-    icons: [icons.IconNode, icons.IconAPI, icons.IconSelenium, icons.IconNestjs],
+    icons: [
+      icons.IconNode,
+      icons.IconAPI,
+      icons.IconSelenium,
+      icons.IconNestjs,
+    ],
   },
 ];

@@ -83,6 +83,20 @@
             "github": "https://github.com/henrique307/travels-website"
           },
           {
+            "title": "Aplicativo de viagens | Draftbit",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/triplt.png",
+            "description": "Aplicativo para agência de viagens feito usando a ferramenta Draftbit baseado em um template, aplicativo utiliza React Native no código.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+viagens.mp4",
+            "github": ""
+          },
+          {
+            "title": "Aplicativo de imóveis | Draftbit",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/Stay.png",
+            "description": "Aplicativo de busca de imóveis feito usando a ferramenta Draftbit baseado em um template, aplicativo utiliza React Native no código",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+imoveis.mp4",
+            "github": ""
+          },
+          {
             "title": "API integrada ao Google Sheets",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
             "description": "API integrada com o google sheets, que executa todas as operações CRUD necessárias para fazer integração com uma aplicação de sua escolha! ",
@@ -104,6 +118,20 @@
             "github": ""
           },
           {
+            "title": "Criação de cobranças automáticas | Asaas + Bitrix24",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bitrix+%2B+asaas.png",
+            "description": "Integração entre as plataformas Asaas e Bitrix24 que cria cobranças automáticamente assim que um card for criado, executando todo o processo de cobrança até requisição de nota fiscal de forma automática.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/integra%C3%A7%C3%A3o+bitrix-assas.mp4",
+            "github": ""
+          },
+          {
+            "title": "Chatbot conversacional | OpenAI API + Telegram",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/openai-logo_1.png",
+            "description": "Chatbot conversacional que age como Carlos, um professor de uma grande universidade - bot se comunica utilizando linguagem rebuscada e formal conforme configurado, e utiliza o telegram como plataforma",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/chatbot-conversacional-carlos-telegram-novitaai.mp4",
+            "github": "https://github.com/henrique307/Novita-ai-demo/"
+          },
+          {
             "title": "AI images generator | Freepik API",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
             "description": "Chatbot Gerador de imagens por IA usando a API do Freepik ou do NovitaAI, chatbot possui mensalidade embutida com pagamento usando a API do mercado pago",
@@ -111,7 +139,7 @@
             "github": ""
           },
           {
-            "title": "Integração Ifood x Shipday",
+            "title": "Integração | Ifood + Shipday",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
             "description": "Integração entre as plataformas Ifood e Shipday usando um webhook como ponte para conectar ambas as aplicações através de suas respectivas APIs",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",

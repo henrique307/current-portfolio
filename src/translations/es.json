@@ -83,6 +83,20 @@
             "github": "https://github.com/henrique307/travels-website"
           },
           {
+            "title": "Aplicación de viajes | Draftbit",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/triplt.png",
+            "description": "Aplicación para una agencia de viajes hecha usando la herramienta Draftbit basada en una plantilla, la aplicación utiliza React Native en el código.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+viagens.mp4",
+            "github": ""
+          },
+          {
+            "title": "Aplicación de bienes raíces | Draftbit",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/Stay.png",
+            "description": "Aplicación de búsqueda de bienes raíces hecha usando la herramienta Draftbit basada en una plantilla, la aplicación utiliza React Native en el código.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+imoveis.mp4",
+            "github": ""
+          },
+          {
             "title": "API integrada a Google Sheets",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
             "description": "API integrada con Google Sheets, que ejecuta todas las operaciones CRUD necesarias para hacer integración con una aplicación de tu elección",
@@ -102,6 +116,20 @@
             "description": "Aplicación fullstack con inicio de sesión multitenant usando Auth0. La aplicación permite la participación en varios equipos a través de un sistema de inicio de sesión multitenant.",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
             "github": ""
+          },
+          {
+            "title": "Creación de cobros automáticos | Asaas + Bitrix24",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bitrix+%2B+asaas.png",
+            "description": "Integración entre las plataformas Asaas y Bitrix24 que crea cobros automáticamente cuando se crea una tarjeta, ejecutando todo el proceso de cobro hasta la solicitud de factura de forma automática.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/integra%C3%A7%C3%A3o+bitrix-assas.mp4",
+            "github": ""
+          },
+          {
+            "title": "Chatbot conversacional | OpenAI API + Telegram",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/openai-logo_1.png",
+            "description": "Chatbot conversacional que actúa como Carlos, un profesor de una gran universidad. El bot se comunica utilizando un lenguaje formal y culto según configurado, y utiliza Telegram como plataforma.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/chatbot-conversacional-carlos-telegram-novitaai.mp4",
+            "github": "https://github.com/henrique307/Novita-ai-demo/"
           },
           {
             "title": "Generador de Imágenes IA | API de Freepik",
@@ -143,7 +171,7 @@
           "title": "Cliente 99Freelas",
           "profile": "",
           "evaluation": "¡Excelente profesional! Demostró una comprensión profunda de nuestro proyecto y, además de ejecutarlo con agilidad, ofreció valiosas sugerencias de mejora, garantizando que el resultado fuera el más adecuado posible."
-        },        
+        },
         {
           "name": "Kaique B.",
           "title": "Cliente de 99Freelas",
