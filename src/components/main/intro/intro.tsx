@@ -14,7 +14,7 @@ export function Intro() {
   const { t } = useTranslation("global");
   const introTranslation = t("main.intro", { returnObjects: true }) as introTranslation;
 
-  const curriculo = "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/Curriculo+Henrique+Florencio+(portugues).pdf";
+  const curriculo = "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/CurriculoHenriqueFlorencio.pdf";
 
   return (
     <div
