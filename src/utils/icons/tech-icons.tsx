@@ -9,6 +9,10 @@ export const icons = {
   IconJavascript(props: TechIconInterface) {
     return <i className={`${props.className} devicon-javascript-plain ${props.colored && "colored"}`} title="Javascript"></i>;
   },
+
+  IconTypescript(props: TechIconInterface) {
+    return <i className={`${props.className} devicon-typescript-plain ${props.colored && "colored"}`} title="Typescript"></i>;
+  },
   
   IconHtml5(props: TechIconInterface) {
     return <i className={`${props.className} devicon-html5-plain ${props.colored && "colored"}`} title="HTML"></i>;
