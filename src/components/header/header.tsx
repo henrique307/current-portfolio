@@ -59,14 +59,14 @@ export function HeaderComponent() {
               </label>
             </div>
             <div className="lg:right-0 lg:translate-x-0 lg:relative absolute right-[50%] translate-x-[50%]">
-              <Logo className="text-xl" />
+              <Logo className="text-clamp_title" />
             </div>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">
                 {navItems.map((item, i) => {
                   return (
                     <li key={i}>
-                      <a className="font-medium opacity-75" href={item.link}>
+                      <a className="text-clamp_subtext opacity-75" href={item.link}>
                         {item.nome}
                       </a>
                     </li>
@@ -130,7 +130,7 @@ export function HeaderComponent() {
           {navItems.map((item, i) => {
             return (
               <li key={i}>
-                <a className="font-medium opacity-75" href={item.link}>
+                <a className="text-clamp_subtext opacity-75" href={item.link}>
                   {item.nome}
                 </a>
               </li>

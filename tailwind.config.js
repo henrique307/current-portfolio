@@ -4,7 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {},
+  theme: {
+    fontSize: {
+      clamp_title: "clamp(1.15rem, 2.5vw, 1.7rem)",
+      clamp_subtitle: "clamp(0.9rem, 2vw, 1.15rem)",
+      clamp_text: "clamp(0.85rem, 1.5vw, 1rem)",
+      clamp_subtext: "clamp(0.75rem, 1vw, 0.8rem)",
+    }
+  },
   plugins: [require("daisyui")],
   daisyui: {
     themes: ["forest","light"]

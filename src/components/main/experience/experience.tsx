@@ -52,7 +52,7 @@ export function Experiencia() {
         icons.IconCSharp,
         icons.IconDotNet,
         icons.IconJava,
-        icons.IconSpring
+        icons.IconSpring,
       ],
     },
     {
@@ -76,14 +76,14 @@ export function Experiencia() {
     >
       <div className="text-left flex flex-col items-center w-full md:w-[90%]">
         <div className="flex flex-col md:flex-row items-center w-full justify-between">
-          <h1 className="lg:text-xl md:text-lg font-bold text-center md:w-2/4 md:text-left">
+          <h1 className="text-clamp_subtitle font-bold text-center md:w-2/4 md:text-left">
             {experienceTranslation.header.left_header}
           </h1>
           <div className="w-full mt-5 md:mt-0 md:w-1/3">
-            <h2 className="text-center md:text-left md:text-sm text-accent uppercase text-xs tracking-widest font-mono">
+            <h2 className="text-clamp_text text-center md:text-left text-accent uppercase tracking-widest font-mono">
               {experienceTranslation.header.right_header.main_header}
             </h2>
-            <span className="block text-xs sm:text-sm md:text-base opacity-75 text-center md:text-left">
+            <span className="block text-clamp_subtitle opacity-75 text-center md:text-left">
               {experienceTranslation.header.right_header.sub_header}
             </span>
           </div>
@@ -92,30 +92,30 @@ export function Experiencia() {
           {experienceTranslation.services.map((servico, i) => {
             return (
               <div
-                className="px-8 flex overflow-hidden flex-col justify-between text-center w-[80%] sm:w-96 md:w-86 pt-10 pb-10 bg-base-100 inline gap-3 border-b-secondary border-b-2 relative"
+                className="px-8 flex overflow-hidden flex-col text-center w-[80%] sm:w-96 md:w-86 pt-10 pb-14 bg-base-100 border-b-secondary border-b-2 relative"
                 key={`exp-${i}`}
               >
                 {servicos[i].icon("size-14 mb-3 mx-auto")}
-                <h1 className="text-2xl font-bold bg-gradient-to-t from-primary to-indigo-500 text-transparent bg-clip-text">
+                <h1 className="text-clamp_title font-bold bg-gradient-to-t from-primary to-indigo-500 text-transparent bg-clip-text">
                   {servico.header}
                 </h1>
-                <span className="text-sm tracking-loose sm:text-base md:text-lg text-base-content inline-block mt-5">
+                <span className="text-clamp_text tracking-loose text-base-content inline-block mt-5">
                   {servico.description}
                 </span>
                 <div
                   tabIndex={0}
                   className={`flex flex-col left-0 z-0 w-full h-full absolute translate-y-[70%] focus:translate-y-0 focus:bg-black focus:bottom-0 focus:opacity-90 transition`}
                 >
-                    <TopArrow className="mt-5 lg:mt-8 scale-[.7] mx-auto cursor-pointer opacity-70 animate-bounce focus:display-none" />
-                    <ul className="w-1/2 justify-center mt-10 lg:mt-12 mx-auto flex flex-wrap gap-5">
-                      {servicos[i].tecnologies.map((TechIcon, i) => {
-                        return (
-                          <li key={i}>
-                            <TechIcon className="text-3xl sm:text-4xl"/>
-                          </li>
-                        );
-                      })}
-                    </ul>
+                  <TopArrow className="mt-3 lg:mt-6 scale-[.7] mx-auto cursor-pointer opacity-70 animate-bounce focus:display-none" />
+                  <ul className="w-1/2 justify-center mt-10 lg:mt-12 mx-auto flex flex-wrap gap-5">
+                    {servicos[i].tecnologies.map((TechIcon, i) => {
+                      return (
+                        <li key={i}>
+                          <TechIcon className="text-3xl sm:text-4xl" />
+                        </li>
+                      );
+                    })}
+                  </ul>
                   {/* <div tabIndex={0} className="z-10 absolute layer w-full h-full "></div> */}
                 </div>
               </div>

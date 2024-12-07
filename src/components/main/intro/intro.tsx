@@ -23,10 +23,10 @@ export function Intro() {
     >
       <div className="items-start w-[98%] relative">
         <div className="text-left">
-          <h1 className="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-primary">
+          <h1 className="text-clamp_subtitle font-bold text-primary">
             {introTranslation.greetings}{" "}
           </h1>
-          <div className="-translate-x-1 md:-translate-x-2 bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent font-mono flex sm:flex-row w-fit text-sm sm:text-2xl lg:text-4xl font-bold">
+          <div className="-translate-x-1 md:-translate-x-2 bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent font-mono flex sm:flex-row w-fit text-clamp_title font-bold">
             |
             <ReactTyped
               strings={introTranslation.typing_values}
@@ -41,7 +41,7 @@ export function Intro() {
               <p className="w-fit border-r border-base-content typing"></p>
             </ReactTyped>
           </div>
-          <p className="text-xs sm:text-sm md:text-lg lg:text-xl opacity-75 pb-4 pt-2 max-w-lg lg:max-w-3xl">
+          <p className="text-clamp_text opacity-75 pb-4 pt-2 max-w-lg lg:max-w-3xl">
             {introTranslation.description}
           </p>
           <div className="flex gap-4">
@@ -54,7 +54,7 @@ export function Intro() {
             <a
               target="_blank"
               href={curriculo}
-              className="btn btn-sm md:btn-md lg:btn-lg btn-slate-200 btn-outline rounded-none"
+              className="btn text-clamp_text btn-sm md:btn-md lg:btn-lg btn-slate-200 btn-outline rounded-none"
             >
               <DownloadIcon /> Download CV
             </a>

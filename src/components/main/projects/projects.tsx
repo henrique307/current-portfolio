@@ -1,4 +1,3 @@
-import "./projects.css";
 import { icons } from "../../../utils/icons/tech-icons";
 import { NewWindowIcon, TopArrow } from "../../../utils/icons/icons";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -40,10 +39,10 @@ export function Trabalhos() {
       <div className="text-left flex flex-col items-center mx-auto w-[90%]">
         <div className="flex justify-between w-[90%] items-end">
           <div className="text-center sm:text-left mx-auto sm:m-0">
-            <h1 className="text-accent uppercase text-xs md:text-sm tracking-widest font-mono md:text-base">
+            <h1 className="text-accent uppercase text-clamp_text tracking-widest font-mono">
               --- {projectsTranslations.header.main_header}
             </h1>
-            <h2 className="text-lg md:text-xl">
+            <h2 className="text-clamp_subtitle">
               {projectsTranslations.header.sub_header}
             </h2>
           </div>
@@ -80,10 +79,10 @@ export function Trabalhos() {
                     />
                   </div>
                   <div className="bottom-0 w-full p-3 pt-0">
-                    <h1 className="text-lg cursor-default mt-5">
+                    <h1 className="text-clamp_subtitle cursor-default mt-5">
                       {trabalho.title}
                     </h1>
-                    <article className="opacity-75 my-5">{trabalho.description}</article>
+                    <article className="text-clamp_text opacity-75 my-5">{trabalho.description}</article>
                     <div className="flex mt-2 justify-between">
                       <div className="flex items-center gap-2">
                         {trabalho.icons?.map((Icon, i) => {

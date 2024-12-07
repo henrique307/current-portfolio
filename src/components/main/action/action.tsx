@@ -71,20 +71,32 @@ export function CallToAction() {
       comands: {
         send: string;
         back: string;
-      }
+      };
     };
   }
 
   const zodSchema = z.object({
-    nome: z.string().min(1, { message: actionTranslation.form.failure.input_error.name.required }),
+    nome: z
+      .string()
+      .min(1, {
+        message: actionTranslation.form.failure.input_error.name.required,
+      }),
     email: z
       .string()
-      .min(1, { message: actionTranslation.form.failure.input_error.email.required })
-      .email({ message: actionTranslation.form.failure.input_error.email.invalid }),
+      .min(1, {
+        message: actionTranslation.form.failure.input_error.email.required,
+      })
+      .email({
+        message: actionTranslation.form.failure.input_error.email.invalid,
+      }),
     mensagem: z
       .string()
-      .min(1, { message: actionTranslation.form.failure.input_error.message.required })
-      .max(1500, { message: actionTranslation.form.failure.input_error.message.max_lenght }),
+      .min(1, {
+        message: actionTranslation.form.failure.input_error.message.required,
+      })
+      .max(1500, {
+        message: actionTranslation.form.failure.input_error.message.max_lenght,
+      }),
   });
 
   const {
@@ -135,17 +147,21 @@ export function CallToAction() {
               ""
             ) : !errorMessage ? (
               <div className="bg-error max-w-2xl text-center text-red-900 rounded-md  px-6 py-3">
-                <h1 className="text-3xl text-red-900 px-6 py-3 bold">
-                {actionTranslation.form.failure.sending_error.header}
+                <h1 className="text-clamp_title text-red-900 px-6 py-3 bold">
+                  {actionTranslation.form.failure.sending_error.header}
                 </h1>
-                <p className="text-xl">
-                {actionTranslation.form.failure.sending_error.main}
+                <p className="text-clamp_subtitle">
+                  {actionTranslation.form.failure.sending_error.main}
                 </p>
               </div>
             ) : (
               <div className="max-w-2xl bg-success text-center text-green-900 rounded-md  px-6 py-3">
-                <h1 className="text-3xl bold">{actionTranslation.form.success.header}</h1>
-                <p className="text-xl text-center">{actionTranslation.form.success.main}</p>
+                <h1 className="text-3xl bold">
+                  {actionTranslation.form.success.header}
+                </h1>
+                <p className="text-xl text-center">
+                  {actionTranslation.form.success.main}
+                </p>
               </div>
             )}
             <div className="card bg-base-200 p-5 pt-0 shrink-0 w-full max-w-md shadow-2xl">
@@ -155,7 +171,9 @@ export function CallToAction() {
                     <span
                       className={`label-text ${errors.nome && "text-error"}`}
                     >
-                      {errors.nome ? errors.nome?.message : actionTranslation.form.inputs.name.label}
+                      {errors.nome
+                        ? errors.nome?.message
+                        : actionTranslation.form.inputs.name.label}
                     </span>
                   </label>
                   <input
@@ -170,13 +188,17 @@ export function CallToAction() {
                     <span
                       className={`label-text ${errors.email && "text-error"}`}
                     >
-                      {errors.email ? errors.email?.message : actionTranslation.form.inputs.email.label}
+                      {errors.email
+                        ? errors.email?.message
+                        : actionTranslation.form.inputs.email.label}
                     </span>
                   </label>
                   <input
                     {...register("email")}
                     type="email"
-                    placeholder={actionTranslation.form.inputs.email.placeholder}
+                    placeholder={
+                      actionTranslation.form.inputs.email.placeholder
+                    }
                     className="input input-bordered rounded-none"
                   />
                 </div>
@@ -194,12 +216,16 @@ export function CallToAction() {
                   </label>
                   <textarea
                     {...register("mensagem")}
-                    placeholder={actionTranslation.form.inputs.message.placeholder}
+                    placeholder={
+                      actionTranslation.form.inputs.message.placeholder
+                    }
                     className="py-2 h-32 input input-bordered rounded-none"
                   />
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary rounded-none">{actionTranslation.form.comands.send}</button>
+                  <button className="btn btn-primary rounded-none">
+                    {actionTranslation.form.comands.send}
+                  </button>
                 </div>
               </form>
             </div>
@@ -213,10 +239,10 @@ export function CallToAction() {
           className={`hero-content text-center text-neutral-content transition-opacity duration-500`}
         >
           <div className="max-w-3xl py-10">
-            <h1 className="mb-5 text-xl md:text-3xl lg:text-4xl font-bold tracking-wider">
+            <h1 className="mb-5 text-clamp_title font-bold tracking-wider">
               {actionTranslation.header}
             </h1>
-            <p className="mb-5 my-8 opacity-75 text-sm md:text-xl px-2 lg:text-2xl leading-relaxed">
+            <p className="mb-5 my-8 opacity-75 text-clamp_subtitle px-2 leading-relaxed">
               {actionTranslation.main}
             </p>
             <button
