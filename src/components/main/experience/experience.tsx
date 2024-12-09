@@ -111,7 +111,7 @@ export function Experiencia() {
                     {servicos[i].tecnologies.map((TechIcon, i) => {
                       return (
                         <li key={i}>
-                          <TechIcon className="text-3xl sm:text-4xl" />
+                          <TechIcon className="text-[1.6rem] sm:text-[1.7rem] lg:text-[1.8rem]" />
                         </li>
                       );
                     })}
