@@ -43,7 +43,7 @@ export function Testimonials() {
       <div className="items-start w-[90%]">
         <div className="w-full">
           <span className="text-clamp_text uppercase tracking-widest font-mono block mb-2 text-accent w-full text-center">
-            --- {testimonialsTranslation.header.main_header}
+            {testimonialsTranslation.header.main_header}
           </span>
           <h1 className="text-clamp_subtitle font-bold w-full text-center">
             {testimonialsTranslation.header.sub_header}
