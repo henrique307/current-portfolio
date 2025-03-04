@@ -5,6 +5,8 @@ import { i18next } from "./translations/i18n";
 import "./index.css";
 import { I18nextProvider } from "react-i18next";
 
+console.log(`Versão: ${__APP_VERSION__}`);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>

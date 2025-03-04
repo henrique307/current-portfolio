@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { Logo } from "../../utils/logo";
 
 export function FooterComponent() {
-
   interface FooterTranslation {
     henridev: {
       title: string;
@@ -25,11 +24,13 @@ export function FooterComponent() {
         <div className="footer p-10 text-base-content">
           <div className="flex flex-col h-full justify-between w-full">
             <aside className="flex flex-col gap-1">
-              <Logo className="text-clamp_subtitle" />
-              <p className="text-clamp_text">{footerTranslation.henridev.title}</p>
+              <div>
+                <Logo className="text-clamp_subtitle" displayVersion />
+              </div>
               <p className="text-clamp_text">
-                henrique.florencio307@gmail.com
+                {footerTranslation.henridev.title}
               </p>
+              <p className="text-clamp_text">henrique.florencio307@gmail.com</p>
               <p className="text-clamp_text">
                 Copyright © 2024 - {footerTranslation.henridev.rights}
               </p>
