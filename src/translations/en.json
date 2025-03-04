@@ -39,7 +39,7 @@
     },
     "experience": {
       "header": {
-        "left_header": "4+ years of experience working with software development",
+        "left_header": "More than 4 years of experience in scalable and adaptable Software Development",
         "right_header": {
           "main_header": "services",
           "sub_header": "Discover the best services I offer, always focused on the success of your project."
@@ -52,7 +52,7 @@
         },
         {
           "header": "Back End",
-          "description": "Scalable and optimized APIs following REST standards, with Swagger documentation and data validation!"
+          "description": "Scalable and optimized REST APIs, with Swagger documentation and data validation!"
         },
         {
           "header": "Tools",
